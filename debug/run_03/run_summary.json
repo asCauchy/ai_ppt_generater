@@ -1,0 +1,22 @@
+{
+  "run_dir": "G:\\codes\\ai_ppt_generator\\debug\\run_03",
+  "timestamp": "2026-05-20T17:54:57.863001",
+  "steps": [
+    {
+      "agent": "narrative_planner",
+      "errors": 0,
+      "warnings": 0,
+      "suggestions": 0,
+      "error_details": [],
+      "warning_details": []
+    },
+    {
+      "agent": "content_writer",
+      "errors": 0,
+      "warnings": 0,
+      "suggestions": 0,
+      "error_details": [],
+      "warning_details": []
+    }
+  ]
+}

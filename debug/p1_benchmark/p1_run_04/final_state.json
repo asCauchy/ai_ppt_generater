@@ -1,0 +1,428 @@
+{
+  "meta": {
+    "title": "中国 AI 产业发展",
+    "style": "未来科技风",
+    "uuid": "038c2511dd82",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "科技行业从业者与投资人",
+      "knowledge_level": "expert"
+    },
+    "occasion": {
+      "type": "conference_keynote",
+      "formality": "semi_formal"
+    },
+    "intent": {
+      "primary_goal": "inspire",
+      "desired_outcome": "激发听众对中国AI产业的信心与参与热情"
+    },
+    "duration": {
+      "total_minutes": 8
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "起：中国AI的觉醒时刻",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          1
+        ],
+        "goal": "建立宏大语境，引发听众对中国AI产业的好奇与关注"
+      },
+      {
+        "id": "sec_02",
+        "label": "承：技术突破与生态崛起",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          2,
+          2
+        ],
+        "goal": "展示中国AI在核心技术、应用场景和生态建设上的关键进展"
+      },
+      {
+        "id": "sec_03",
+        "label": "转：从追赶到引领的拐点",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          3,
+          3
+        ],
+        "goal": "揭示中国AI从量变到质变的转折点，激发信心"
+      },
+      {
+        "id": "sec_04",
+        "label": "合：携手共创智能未来",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          4,
+          4
+        ],
+        "goal": "总结核心观点，号召行动，点燃参与热情"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "inspired"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "determined"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening",
+        "vision"
+      ],
+      "title": "中国AI产业：从觉醒到引领",
+      "subtitle": "未来十年，智能浪潮中的中国力量",
+      "content": {
+        "lead": "中国AI正站在从技术追赶到全球引领的历史拐点上，未来十年将重塑全球科技格局。",
+        "points": [
+          "十年前，中国AI还在追赶世界；今天，我们正站在定义未来的起跑线上。",
+          "从基础模型到产业应用，从人才储备到资本密度，中国AI的生态力量已不可忽视。",
+          "未来十年，不是中国能否引领的问题，而是我们将如何引领的问题。"
+        ],
+        "visual_description": "一幅动态的全球地图，中国区域亮起密集的光点，光点向外辐射，连接全球主要科技节点，象征影响力从中国向外扩散。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:21:07Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "excited",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "开场用提问或对比语气抓住注意力：'想象一下，十年前我们还在问中国AI能否追上世界，今天我们要问的是——世界能否跟上中国？'"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "overview",
+        "roadmap"
+      ],
+      "title": "今日议程",
+      "subtitle": null,
+      "content": {
+        "lead": "我们将从四个维度透视中国AI产业的现状与未来。",
+        "points": [
+          "第一，技术突破与生态崛起：我们如何构建了从芯片到应用的全栈能力。",
+          "第二，从追赶到引领的拐点：哪些信号告诉我们，转折已经到来。",
+          "第三，全球竞争格局下的中国位置：机遇与挑战并存。",
+          "第四，携手共创智能未来：在座每一位的行动，将定义下一个十年。"
+        ],
+        "visual_description": "简洁的议程路线图，四个节点用不同颜色标记，形成一条从底部到顶部的上升箭头路径。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "fast",
+        "emotional_state": "focused",
+        "pause_after": false,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:21:07Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语速稍快，用'快速预览'的语气带过，保持听众期待感。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "achievement",
+        "ecosystem"
+      ],
+      "title": "技术突破与生态崛起",
+      "subtitle": "从算法到芯片，从应用到基础设施",
+      "content": {
+        "lead": "中国AI在基础研究、产业应用和生态建设上已形成三位一体的协同突破。",
+        "points": [
+          "基础研究层面：中国AI论文数量全球第一，引用量进入前三，尤其在计算机视觉和自然语言处理领域。",
+          "产业应用层面：中国已拥有全球最多的AI企业（超3000家），覆盖医疗、金融、制造、自动驾驶等关键赛道。",
+          "生态建设层面：从华为昇腾到百度飞桨，国产AI芯片和深度学习框架正在形成自主闭环。",
+          "人才储备层面：中国AI人才总量全球第二，每年新增AI相关毕业生超20万。",
+          "资本投入层面：2023年中国AI领域融资总额超500亿美元，仅次于美国。",
+          "政策支持层面：从'新一代人工智能发展规划'到地方产业园，政策红利持续释放。",
+          "一个关键对比：中国AI专利申请量占全球40%以上，是美国的1.5倍。"
+        ],
+        "visual_description": "一组并排的数据可视化图表：左侧是论文/专利/人才数量的柱状图对比，右侧是中国AI产业生态的环形图，展示各环节的协同关系。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "dense",
+        "media_weight": "text_and_chart",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:21:07Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "用数据说话，每个要点配合大屏幕上的可视化图表，语气坚定，让听众感受到'这不是空谈，是事实'。"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "insight",
+      "semantic_tags": [
+        "turning_point",
+        "vision",
+        "opportunity"
+      ],
+      "title": "从追赶到引领的拐点",
+      "subtitle": "三大信号预示中国AI进入新纪元",
+      "content": {
+        "lead": "人才回流、资本聚焦、政策协同——三大信号共同指向中国AI的引领时代。",
+        "points": [
+          "信号一：人才回流。过去三年，超过10万海外AI人才回国，其中顶尖科学家占比显著提升。",
+          "信号二：资本聚焦。全球风险投资中，中国AI赛道占比从2019年的15%升至2023年的28%。",
+          "信号三：政策协同。从中央到地方，AI被列为'新质生产力'核心，政策不再是口号而是行动。",
+          "更深层的变化：中国AI不再只是'应用创新'，而是开始向基础理论和底层架构输出原创贡献。",
+          "一个关键洞察：真正的拐点不是技术指标超越，而是生态自信的建立——我们不再问'能不能做'，而是问'怎么做更好'。"
+        ],
+        "visual_description": "一张时间轴折线图，横轴为年份，纵轴为'技术追赶指数'，曲线在2023-2024年出现陡峭上扬的拐点，背景是中国地图轮廓。"
+      },
+      "relation_to_prev": "contrast",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "slow",
+        "emotional_state": "inspired",
+        "pause_after": true,
+        "estimated_seconds": 150
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "highlight",
+        "density": "medium",
+        "media_weight": "text_and_icon",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:21:07Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "surprised",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "语气从数据陈述转向深度解读，放慢语速，强调'信号'和'拐点'这两个关键词，让听众产生'原来如此'的顿悟感。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing",
+        "action",
+        "future"
+      ],
+      "title": "携手共创智能未来",
+      "subtitle": "加入浪潮，定义下一个十年",
+      "content": {
+        "lead": "中国AI的未来不是旁观者的未来，而是每一位参与者的未来。",
+        "points": [
+          "加入这场变革：无论你是开发者、创业者还是投资人，中国AI的下一章需要你的参与。",
+          "行动起来：今天不是听报告的日子，而是决定你在这个生态中扮演什么角色的起点。",
+          "未来十年，不是旁观者的未来，而是每一位参与者的未来——现在就是最好的入场时机。"
+        ],
+        "visual_description": "一幅充满希望的未来城市图景，AI元素（如自动驾驶汽车、智能机器人、全息界面）融入日常生活，色调明亮温暖。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "determined",
+        "pause_after": false,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:21:07Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "inspired",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气从分析转向感召，用'你'直接指向听众，最后一句'现在就是最好的入场时机'要说得坚定有力，配合手势指向全场。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-21T08:21:07Z",
+        "summary": "Planned 5 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 1,
+          "suggestions": 3
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-21T08:21:28Z",
+        "summary": "Filled content for 5 slides, emotional range: ['convinced', 'engaged', 'excited', 'inspired', 'surprised']",
+        "validation": {
+          "errors": 0,
+          "warnings": 2,
+          "suggestions": 4
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "family": "chinese_macro_cinematic",
+  "pack": "chinese_macro_cinematic/timeline_commercial",
+  "scored_at": "2026-05-25T12:17:33Z",
+  "overall": 93.2,
+  "passed": true,
+  "dimensions": [
+    {
+      "name": "typography_discipline",
+      "score": 89.0,
+      "weight": 0.13,
+      "remarks": "Acceptable scale progression; Font pairing present; Distinct title/body fonts; 2 role prescriptions defined"
+    },
+    {
+      "name": "cinematic_depth",
+      "score": 94.0,
+      "weight": 0.12,
+      "remarks": "Rich background palette; Depth layers configured; 2 surface role overrides; Complex gradient techniques"
+    },
+    {
+      "name": "whitespace_quality",
+      "score": 87.0,
+      "weight": 0.12,
+      "remarks": "Moderate role variation; Hook has generous whitespace; Conflict appropriately tight"
+    },
+    {
+      "name": "motion_coherence",
+      "score": 100,
+      "weight": 0.13,
+      "remarks": "Complete easing vocabulary; Correctly descending speed curve; Rich stagger variation across emotions; Complete keyframe library"
+    },
+    {
+      "name": "visual_restraint",
+      "score": 95.0,
+      "weight": 0.12,
+      "remarks": "Restrained primary color; Mostly clean surfaces, selective complexity; Complete semantic color system"
+    },
+    {
+      "name": "focal_clarity",
+      "score": 90.0,
+      "weight": 0.13,
+      "remarks": "Correct centering for high-impact roles; Asymmetry for tension — intentional; Adequate scale contrast"
+    },
+    {
+      "name": "emotional_consistency",
+      "score": 90.0,
+      "weight": 0.12,
+      "remarks": "18 emotional typography mappings; Dynamic tension curve; Color pairing present"
+    },
+    {
+      "name": "premium_feel",
+      "score": 100,
+      "weight": 0.13,
+      "remarks": "Near-complete system coverage; Usage guidance present; Detailed style description; Rich, complete color palette"
+    }
+  ],
+  "breakdown": {
+    "typography_discipline": {
+      "score": 89.0,
+      "remarks": "Acceptable scale progression; Font pairing present; Distinct title/body fonts; 2 role prescriptions defined"
+    },
+    "cinematic_depth": {
+      "score": 94.0,
+      "remarks": "Rich background palette; Depth layers configured; 2 surface role overrides; Complex gradient techniques"
+    },
+    "whitespace_quality": {
+      "score": 87.0,
+      "remarks": "Moderate role variation; Hook has generous whitespace; Conflict appropriately tight"
+    },
+    "motion_coherence": {
+      "score": 100,
+      "remarks": "Complete easing vocabulary; Correctly descending speed curve; Rich stagger variation across emotions; Complete keyframe library"
+    },
+    "visual_restraint": {
+      "score": 95.0,
+      "remarks": "Restrained primary color; Mostly clean surfaces, selective complexity; Complete semantic color system"
+    },
+    "focal_clarity": {
+      "score": 90.0,
+      "remarks": "Correct centering for high-impact roles; Asymmetry for tension — intentional; Adequate scale contrast"
+    },
+    "emotional_consistency": {
+      "score": 90.0,
+      "remarks": "18 emotional typography mappings; Dynamic tension curve; Color pairing present"
+    },
+    "premium_feel": {
+      "score": 100,
+      "remarks": "Near-complete system coverage; Usage guidance present; Detailed style description; Rich, complete color palette"
+    }
+  }
+}

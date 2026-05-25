@@ -1,0 +1,561 @@
+{
+  "meta": {
+    "title": "中国 AI 崛起",
+    "style": "future_tech",
+    "uuid": "1a8e8c981557",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "大学生",
+      "knowledge_level": "intermediate"
+    },
+    "occasion": {
+      "type": "tech_conference",
+      "formality": "semi_formal"
+    },
+    "intent": {
+      "primary_goal": "persuade",
+      "desired_outcome": "让听众相信中国AI已具备全球竞争力"
+    },
+    "duration": {
+      "total_minutes": 15
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "起：中国AI的觉醒时刻",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          1
+        ],
+        "goal": "建立认知：中国AI已从追赶者变为并跑者，引发听众兴趣"
+      },
+      {
+        "id": "sec_02",
+        "label": "承：技术突破与生态优势",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          2,
+          3
+        ],
+        "goal": "用数据和案例证明中国AI在核心技术和应用生态上的竞争力"
+      },
+      {
+        "id": "sec_03",
+        "label": "转：从应用到全球影响力",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          4,
+          5
+        ],
+        "goal": "展示中国AI如何从技术突破走向全球市场，形成转折高点"
+      },
+      {
+        "id": "sec_04",
+        "label": "合：未来已来，行动在即",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          6,
+          6
+        ],
+        "goal": "总结核心论点，号召听众关注并参与中国AI浪潮"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "convinced"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 5,
+      "pace": "fast",
+      "emotional_state": "excited"
+    },
+    {
+      "slide_index": 5,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "inspired"
+    },
+    {
+      "slide_index": 6,
+      "intensity": 3,
+      "pace": "slow",
+      "emotional_state": "determined"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening"
+      ],
+      "title": "中国 AI 崛起：从追赶者到全球领跑者",
+      "subtitle": "技术突破、生态优势与未来展望",
+      "content": {
+        "lead": "中国AI已不再是跟随者，而是全球创新版图中不可忽视的竞争者。",
+        "points": [
+          "从DeepSeek到宇树科技，中国AI正在全球舞台上重新定义‘创新’的含义。",
+          "过去五年，中国AI论文引用量首次超越美国，成为全球科研新引擎。"
+        ],
+        "visual_description": "一张动态世界地图，中国区域亮起蓝色光点，向外辐射连接全球各大城市，象征影响力扩散。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": true,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "curious",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "开场用‘你最近用过的AI产品，有多少来自中国？’引发好奇，然后展示地图光点，制造悬念。"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "overview"
+      ],
+      "title": "议程概览",
+      "subtitle": null,
+      "content": {
+        "lead": "本次分享将沿着‘觉醒—突破—影响—行动’的脉络，揭示中国AI的全球竞争力。",
+        "points": [
+          "觉醒：中国AI如何从追赶到并跑？",
+          "突破：论文、专利、人才——硬核数据揭示领先地位。",
+          "影响：出海与标准制定，中国AI如何改变全球游戏规则？"
+        ],
+        "visual_description": "一条简洁的横向时间轴，四个节点分别标注‘觉醒’‘突破’‘影响’‘行动’，每个节点配一个小图标。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "fast",
+        "emotional_state": "focused",
+        "pause_after": false,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": "timeline",
+      "notes": {
+        "speaker_notes": "快速过一遍议程，强调‘这不是未来学，而是正在发生的事实’，为后续数据铺垫。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "breakthrough"
+      ],
+      "title": "核心突破：从论文到专利的全面领先",
+      "subtitle": "数据揭示中国AI的硬实力",
+      "content": {
+        "lead": "中国在AI论文发表量和专利授权量上已位居全球第一，质量也在快速提升。",
+        "data": {
+          "type": "bar_chart",
+          "title": "中美AI论文发表量对比（2018-2024）",
+          "labels": [
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024"
+          ],
+          "datasets": [
+            {
+              "label": "中国",
+              "values": [
+                12,
+                15,
+                20,
+                28,
+                35,
+                42,
+                48
+              ]
+            },
+            {
+              "label": "美国",
+              "values": [
+                18,
+                20,
+                22,
+                25,
+                27,
+                28,
+                30
+              ]
+            }
+          ]
+        }
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "chart_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "指着数据图表说：‘这些数字不是偶然，是系统性投入的结果。’强调质量提升，避免‘数量多但质量低’的刻板印象。"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "ecosystem",
+        "application"
+      ],
+      "title": "生态优势：数据、场景与政策的三重驱动",
+      "subtitle": "全球最大的互联网用户群带来独特的数据红利",
+      "content": {
+        "lead": "中国拥有全球最丰富的AI应用场景和最强有力的政策支持，形成了独特的创新生态。",
+        "points": [
+          "数据：中国拥有14亿人口产生的海量数据，是AI训练的最佳土壤。",
+          "场景：从移动支付到智慧城市，中国AI应用落地速度全球领先。",
+          "政策：‘十四五’规划将AI列为重点，地方政府提供百亿级产业基金。"
+        ],
+        "visual_description": "三块拼图分别代表‘数据’‘场景’‘政策’，拼合成一个完整的中国地图轮廓，内部有AI芯片和代码符号。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "convinced",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "neutral",
+        "density": "medium",
+        "media_weight": "icon_support",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "reflective",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用‘为什么是中国？’引出这三重驱动，强调生态系统的独特性，而非单一因素。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "content",
+      "narrative_role": "insight",
+      "semantic_tags": [
+        "global",
+        "impact"
+      ],
+      "title": "全球影响力：中国AI企业出海与标准制定",
+      "subtitle": "从产品输出到规则参与",
+      "content": {
+        "lead": "中国AI企业正从国内市场走向全球，在多个领域参与国际标准制定。",
+        "points": [
+          "字节跳动TikTok推荐算法、大疆无人机AI视觉系统，已成为全球标杆产品。",
+          "商汤、旷视等企业参与制定ISO/IEC国际AI标准超30项。",
+          "中国AI企业出海收入年增长45%，东南亚、中东是主要市场。",
+          "开源生态：百度飞桨、华为MindSpore等框架全球下载量突破千万。",
+          "在AI伦理与治理领域，中国提出《全球人工智能治理倡议》，影响国际规则走向。",
+          "人才输出：中国AI工程师在硅谷、伦敦等地担任核心研发角色。"
+        ],
+        "visual_description": "一张全球热力图，中国为红色高亮区，箭头指向东南亚、中东、欧洲，标注‘出海’‘标准’‘开源’等关键词。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "fast",
+        "emotional_state": "excited",
+        "pause_after": true,
+        "estimated_seconds": 150
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "chart_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "surprised",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用‘你可能不知道’开头，列举具体案例（如TikTok算法、大疆视觉），让听众感到‘原来中国AI已经这么强了’。"
+      }
+    },
+    {
+      "id": "slide_05",
+      "index": 5,
+      "structural_role": "content",
+      "narrative_role": "vision",
+      "semantic_tags": [
+        "future",
+        "opportunity"
+      ],
+      "title": "未来展望：下一个十年的关键赛道",
+      "subtitle": "大模型、具身智能与AI for Science",
+      "content": {
+        "lead": "中国AI将在基础模型、机器人科学等领域持续发力，引领下一波浪潮。",
+        "points": [
+          "基础模型：中国正在追赶GPT-4级别的大模型，预计2025年实现突破。",
+          "机器人科学：优必选、宇树科技的人形机器人已进入工厂测试阶段。",
+          "AI for Science：中国科学家用AI预测蛋白质结构、加速新药研发。",
+          "自动驾驶：百度Apollo、小鹏汽车等推动L4级自动驾驶商业化。",
+          "AI+医疗：影像诊断、药物发现等领域，中国AI产品获批数量全球第二。"
+        ],
+        "visual_description": "一条向前延伸的虚拟跑道，起点是‘2024’，终点是‘2030’，沿途标注‘基础模型’‘机器人’‘AI for Science’等里程碑。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "inspired",
+        "pause_after": false,
+        "estimated_seconds": 150
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "icon_support",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "inspired",
+      "presentation_role": "timeline",
+      "notes": {
+        "speaker_notes": "用‘下一个十年，中国AI将改变什么？’过渡，列举具体赛道，让听众看到未来图景。"
+      }
+    },
+    {
+      "id": "slide_06",
+      "index": 6,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing"
+      ],
+      "title": "未来已来，你准备好了吗？",
+      "subtitle": "关注中国AI，参与时代浪潮",
+      "content": {
+        "lead": "中国AI的崛起不是未来，而是正在发生的现实。让我们一起见证并参与。",
+        "points": [
+          "中国AI的崛起不是未来，而是正在发生的现实。",
+          "作为大学生，你可以成为这场变革的参与者——学习AI、关注政策、投身创新。"
+        ],
+        "visual_description": "一张充满活力的照片：一群年轻中国学生在AI实验室里讨论，背景是代码屏幕和机器人手臂。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "slow",
+        "emotional_state": "determined",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:54:41Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "determined",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "结尾语速放慢，目光扫视全场：‘你们不是旁观者，而是下一波浪潮的创造者。’留3秒沉默，然后致谢。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-20T09:54:41Z",
+        "summary": "Planned 7 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 0,
+          "suggestions": 0
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-20T09:54:57Z",
+        "summary": "Filled content for 7 slides, emotional range: ['convinced', 'curious', 'determined', 'engaged', 'inspired', 'reflective', 'surprised']",
+        "validation": {
+          "errors": 0,
+          "warnings": 0,
+          "suggestions": 0
+        }
+      }
+    ]
+  }
+}

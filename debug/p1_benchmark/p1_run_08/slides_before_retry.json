@@ -1,0 +1,256 @@
+[
+  {
+    "id": "slide_00",
+    "index": 0,
+    "structural_role": "cover",
+    "narrative_role": "hook",
+    "semantic_tags": [
+      "opening",
+      "vision"
+    ],
+    "title": "中国 AI 产业：从追赶到定义未来",
+    "subtitle": "2025 年趋势洞察与投资机遇",
+    "content": {
+      "lead": "中国AI正从应用创新走向基础创新，成为全球AI版图的核心引擎。",
+      "points": [
+        "十年前，中国AI还在追赶硅谷的每一个热点；今天，我们正在定义下一个十年的技术范式。",
+        "从应用层到基础层，从跟随者到引领者——中国AI的叙事，已经彻底改写。"
+      ],
+      "visual_description": "一张从模糊到清晰的动态地图，中国区域逐渐点亮并向外辐射光芒，象征从追赶到引领的转变。"
+    },
+    "relation_to_prev": null,
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious",
+      "pause_after": true,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:23:33Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "curious",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "开场用对比制造悬念，停顿后抛出核心观点，吸引听众注意力。"
+    }
+  },
+  {
+    "id": "slide_01",
+    "index": 1,
+    "structural_role": "toc",
+    "narrative_role": "context",
+    "semantic_tags": [
+      "overview",
+      "roadmap"
+    ],
+    "title": "今日议程",
+    "subtitle": null,
+    "content": {
+      "lead": "我们将从全球格局、应用突破、未来挑战与行动路径四个维度展开。",
+      "points": [
+        "第一站：全球AI格局——中国的位置在哪里？",
+        "第二站：应用突破——哪些领域已经跑赢世界？",
+        "第三站：暗流与浪潮——算力瓶颈与AGI的曙光。",
+        "第四站：行动路径——我们如何共同定义未来？"
+      ],
+      "visual_description": "简洁的议程路线图，四个节点用不同颜色标注，形成一条从起点到终点的路径。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused",
+      "pause_after": false,
+      "estimated_seconds": 30
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "accent",
+      "density": "medium",
+      "media_weight": "text_only",
+      "emphasis_level": "normal"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:23:33Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "engaged",
+    "presentation_role": "process",
+    "notes": {
+      "speaker_notes": "快速过一遍议程，用“第一站、第二站”的比喻营造旅程感。"
+    }
+  },
+  {
+    "id": "slide_02",
+    "index": 2,
+    "structural_role": "content",
+    "narrative_role": "evidence",
+    "semantic_tags": [
+      "data",
+      "achievement",
+      "ecosystem"
+    ],
+    "title": "应用驱动，生态崛起",
+    "subtitle": "从消费互联网到产业智能的跨越",
+    "content": {
+      "lead": "中国AI在计算机视觉、自然语言处理、自动驾驶等领域的应用规模全球领先，并已形成从芯片到平台的完整生态。",
+      "points": [
+        "中国计算机视觉市场占全球40%以上，商汤、旷视等企业已进入全球前十。",
+        "自然语言处理领域，百度文心、阿里通义千问等大模型在中文场景下超越GPT-4。",
+        "自动驾驶：百度Apollo路测里程超过8000万公里，覆盖全国30+城市。",
+        "从芯片（寒武纪、地平线）到框架（PaddlePaddle、MindSpore），国产替代生态已初步成型。",
+        "AI专利申请量全球第一，占全球总量的45%以上。",
+        "产业AI渗透率：制造业、金融、医疗三大行业增速超过30%。",
+        "独角兽数量：中国AI独角兽占全球30%，仅次于美国。"
+      ],
+      "visual_description": "一张信息图表，左侧列出应用领域（CV、NLP、自动驾驶），右侧用柱状图或气泡图展示全球占比和增速。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "contrast",
+    "rhythm": {
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed",
+      "pause_after": true,
+      "estimated_seconds": 120
+    },
+    "design": {
+      "layout_mode": "split",
+      "color_role": "highlight",
+      "density": "dense",
+      "media_weight": "chart_dominant",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:23:33Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "convinced",
+    "presentation_role": "data_viz",
+    "notes": {
+      "speaker_notes": "用数据说话，每一条都掷地有声。可以配合手势指向图表中的关键数字。"
+    }
+  },
+  {
+    "id": "slide_03",
+    "index": 3,
+    "structural_role": "content",
+    "narrative_role": "insight",
+    "semantic_tags": [
+      "challenge",
+      "opportunity",
+      "future"
+    ],
+    "title": "暗流与浪潮：算力瓶颈与AGI曙光",
+    "subtitle": "突破卡脖子技术，拥抱通用人工智能",
+    "content": {
+      "lead": "算力受限是短期阵痛，但国产替代与多模态大模型正开启新一轮创新周期。",
+      "points": [
+        "算力瓶颈不是终点，而是创新的催化剂——国产芯片（昇腾、寒武纪）性能已接近国际主流。",
+        "多模态大模型正在打破单一模态的天花板，从文本到图像、视频、3D，AI的感知能力正在跃迁。",
+        "真正的AGI曙光不在于参数规模，而在于推理能力与常识理解的突破。",
+        "中国在AI for Science领域的投入正在加速——从蛋白质折叠到材料发现，AI正在成为科研的第四范式。",
+        "开源生态的崛起（如智源、上海AI Lab）正在降低创新门槛，让更多玩家参与其中。"
+      ],
+      "visual_description": "一幅双螺旋结构图：一条螺旋代表算力瓶颈（暗色），另一条代表国产替代与AGI突破（亮色），两者交织上升。"
+    },
+    "relation_to_prev": "contrast",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "thoughtful",
+      "pause_after": true,
+      "estimated_seconds": 150
+    },
+    "design": {
+      "layout_mode": "fullscreen",
+      "color_role": "warning",
+      "density": "medium",
+      "media_weight": "visual_dominant",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:23:33Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "surprised",
+    "presentation_role": "comparison",
+    "notes": {
+      "speaker_notes": "先承认挑战，再抛出转机，制造“顿悟”感。语速放慢，让听众消化。"
+    }
+  },
+  {
+    "id": "slide_04",
+    "index": 4,
+    "structural_role": "thanks",
+    "narrative_role": "call_to_action",
+    "semantic_tags": [
+      "closing",
+      "summary",
+      "action"
+    ],
+    "title": "携手共进，智领未来",
+    "subtitle": "投资中国AI，就是投资下一个十年",
+    "content": {
+      "lead": "中国AI产业正处于历史性拐点，需要每一位从业者与投资人的共同参与。",
+      "points": [
+        "中国AI产业正站在历史性拐点上——从应用到基础，从追赶到定义。",
+        "这个未来不是等来的，而是需要每一位在座的从业者、投资人、政策制定者共同参与。",
+        "现在就是行动的时刻：加入开源社区、投资基础研究、推动行业落地——让我们一起定义下一个十年。"
+      ],
+      "visual_description": "一张充满动感的未来城市剪影，AI数据流在建筑间流动，象征智能与协作的未来。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": null,
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "inspired",
+      "pause_after": false,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:23:33Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "determined",
+    "presentation_role": "interaction",
+    "notes": {
+      "speaker_notes": "用坚定的语气，目光扫视全场，最后一句邀请大家共同行动，可以配合手势指向观众。"
+    }
+  }
+]

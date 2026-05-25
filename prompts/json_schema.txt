@@ -1,0 +1,48 @@
+你必须严格按照以下JSON Schema输出，这是硬性要求。
+
+输出格式（直接输出JSON，不要包裹在任何markdown代码块中）：
+
+{
+  "meta": {
+    "title": "PPT主标题",
+    "subtitle": "副标题（可选）",
+    "style": "风格名称"
+  },
+  "total_pages": 10,
+  "slides": [
+    {
+      "page_number": 1,
+      "type": "cover",
+      "title": "封面标题",
+      "subtitle": "副标题或汇报人信息",
+      "content": "要点1\n要点2\n要点3",
+      "image_suggestion": "建议配图：类型、构图、关键元素",
+      "visual_notes": "配色建议、字体建议、布局建议"
+    },
+    {
+      "page_number": 2,
+      "type": "toc",
+      "title": "目录",
+      "content": "章节1标题\n章节2标题\n章节3标题",
+      "image_suggestion": "",
+      "visual_notes": ""
+    }
+  ]
+}
+
+字段说明：
+- page_number: 页码，从1开始连续递增
+- type: 页面类型，可选值 ["cover", "toc", "content", "summary", "thanks"]
+- title: 页面标题，不超过15字
+- content: 核心内容，多条用 \n 分隔，每页至少2条，不超过6条
+- image_suggestion: 配图建议，无则填空字符串 ""
+- visual_notes: 视觉设计建议，无则填空字符串 ""
+
+硬性规则：
+1. slides数组长度必须等于 total_pages
+2. page_number 必须从1开始连续递增到 total_pages
+3. 第一页 type 必须是 "cover"
+4. 最后一页 type 必须是 "thanks"
+5. content 不能为空字符串
+6. 所有字符串使用双引号，不允许单引号
+7. 直接输出JSON，不要加任何解释文字，不要用```json```包裹

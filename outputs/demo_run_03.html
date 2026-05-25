@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国 AI 崛起</title>
+<style>
+/* === Design Tokens === */
+:root {
+  --color-primary: #003D6B;
+  --color-secondary: #5B9BD5;
+  --color-accent: #E8A838;
+  --color-neutral: #F0F2F5;
+  --color-background: #FFFFFF;
+  --color-text: #333333;
+  --color-text_light: #888888;
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 18px;
+  --font-lead: 24px;
+  --font-lg: 24px;
+  --font-xl: 32px;
+  --font-hero: 44px;
+  --font-display: 56px;
+  --font-title: '思源黑体';
+  --font-body: '微软雅黑';
+  --spacing-unit: 8px;
+  --slide-padding: 6vh 6vw;
+  --radius: 12px;
+  --transition-speed: 0.6s;
+  --transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === Typography === */
+
+.slide-title { font-size: var(--font-xl); }
+.slide.scene-fullscreen-hero .slide-title { font-size: var(--font-display); }
+.slide.scene-focal-center .slide-title { font-size: var(--font-hero); }
+.slide.scene-horizon-canvas .slide-title { font-size: var(--font-hero); }
+.slide-subtitle { font-size: var(--font-lg); opacity: 0.8; }
+.slide.scene-fullscreen-hero .slide-subtitle { font-size: var(--font-xl); }
+.point-item { font-size: var(--font-lead); }
+.slide.scene-tension-split .point-item { font-size: var(--font-lg); line-height: 1.4; }
+.slide.intensity-5 .point-item { font-weight: 500; }
+.slide.intensity-2 .point-item { font-size: var(--font-base); }
+
+
+/* === Layout Framework === */
+
+.slide-inner {
+  width: 100%; max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.slide.scene-fullscreen-hero .slide-inner,
+.slide.scene-focal-center .slide-inner,
+.slide.scene-horizon-canvas .slide-inner {
+  max-width: 1000px;
+  text-align: center;
+  align-items: center;
+}
+.content-area { flex: 1; }
+.content-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3vw; align-items: start; }
+.content-split.asymmetric { grid-template-columns: 1.3fr 1fr; }
+.content-stack { display: flex; flex-direction: column; gap: 0.5em; }
+
+
+/* === Scene Templates === */
+
+/* Scene: Hook — fullscreen hero */
+.scene-fullscreen-hero .slide-inner {
+  justify-content: center;
+  min-height: 80vh;
+}
+
+/* Scene: Conflict — tension split */
+.scene-tension-split .slide-inner {
+  justify-content: start;
+}
+.scene-tension-split .point-item::before {
+  background: #ff6b6b;
+}
+.scene-tension-split .slide-title {
+  border-left: 3px solid #ff6b6b;
+  padding-left: 1em;
+}
+
+/* Scene: Vision — horizon canvas */
+.scene-horizon-canvas .slide-inner {
+  justify-content: center;
+  min-height: 70vh;
+}
+.scene-horizon-canvas .point-item::before {
+  background: var(--color-accent);
+  box-shadow: 0 0 6px var(--color-accent);
+}
+
+/* Scene: CTA — focal center */
+.scene-focal-center .slide-inner {
+  justify-content: center;
+  min-height: 70vh;
+}
+.scene-focal-center .slide-title {
+  text-shadow: 0 2px 20px rgba(0,0,0,0.15);
+}
+
+/* Scene: Insight — reframe panel */
+.scene-reframe-panel .point-item::before {
+  background: var(--color-secondary);
+}
+
+/* Scene: Evidence — split content */
+.scene-split-content .content-split {
+  align-items: center;
+}
+
+
+/* === Motion System === */
+
+@keyframes reveal-line {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes reveal-scale {
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes fade-in-scale {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px var(--color-accent); }
+  50% { box-shadow: 0 0 20px var(--color-accent), 0 0 40px color-mix(in srgb, var(--color-accent) 50%, transparent); }
+}
+
+/* Entrance animations mapped to emotional_role via JS */
+.point-item.entrance-delayed-reveal { transition-delay: calc(var(--item-index) * 200ms); }
+.point-item.entrance-sudden-appear { transition-delay: calc(var(--item-index) * 80ms); }
+.point-item.entrance-impact-reveal { transition-delay: calc(var(--item-index) * 60ms); }
+.point-item.entrance-slow-dissolve { transition-delay: calc(var(--item-index) * 400ms); }
+.point-item.entrance-strong-enter { transition-delay: calc(var(--item-index) * 150ms); }
+.point-item.entrance-tense-reveal { transition-delay: calc(var(--item-index) * 120ms); }
+.point-item.entrance-rising-reveal { transition-delay: calc(var(--item-index) * 150ms); }
+.point-item.entrance-burst-reveal { transition-delay: calc(var(--item-index) * 100ms); }
+.point-item.entrance-warm-fade { transition-delay: calc(var(--item-index) * 250ms); }
+.point-item.entrance-resolve-enter { transition-delay: calc(var(--item-index) * 100ms); }
+.point-item.entrance-active-reveal { transition-delay: calc(var(--item-index) * 180ms); }
+.point-item.entrance-solid-build { transition-delay: calc(var(--item-index) * 200ms); }
+.point-item.entrance-scale-reveal { transition-delay: calc(var(--item-index) * 150ms); }
+.point-item.entrance-sharp-enter { transition-delay: calc(var(--item-index) * 120ms); }
+.point-item.entrance-gentle-unfold { transition-delay: calc(var(--item-index) * 300ms); }
+.point-item.entrance-drive-forward { transition-delay: calc(var(--item-index) * 120ms); }
+.point-item.entrance-respectful-fade { transition-delay: calc(var(--item-index) * 500ms); }
+.point-item.entrance-questioning-reveal { transition-delay: calc(var(--item-index) * 180ms); }
+
+/* Intensity-driven animation speed */
+.slide.intensity-5 .point-item { transition-duration: 0.15s; }
+.slide.intensity-4 .point-item { transition-duration: 0.25s; }
+.slide.intensity-3 .point-item { transition-duration: 0.35s; }
+.slide.intensity-2 .point-item { transition-duration: 0.5s; }
+.slide.intensity-1 .point-item { transition-duration: 0.7s; }
+
+/* Pace modifiers */
+.slide.pace-fast .point-item { transition-duration: 0.12s; }
+.slide.pace-slow .point-item { transition-duration: 0.5s; }
+
+
+/* === Transitions === */
+
+/* Slide-to-slide transitions driven by relation_to_next */
+.transition-slide-fade { }
+.transition-hard-cut { transition-duration: 0.15s; }
+.transition-morph-deepen { transition-duration: 0.8s; }
+.transition-intensify { transition-duration: 0.3s; }
+.transition-swing-pivot { transition-duration: 0.7s; transition-easing: cubic-bezier(0.6, 0, 0.4, 1); }
+.transition-recall-fade { transition-duration: 0.9s; }
+.transition-color-shift { transition-duration: 0.6s; }
+
+
+/* === Global === */
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { width:100%; height:100%; overflow:hidden; font-family: var(--font-body), system-ui, sans-serif; }
+body { background: var(--color-bg); color: var(--color-text); }
+
+#slides-container {
+  width: 100%; height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-speed) var(--transition-easing),
+              transform var(--transition-speed) var(--transition-easing);
+  transform: translateY(20px);
+  padding: var(--slide-padding);
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.slide.exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Slide-level cinematic classes from state */
+.slide.scene-fullscreen-hero { padding: 8vh 6vw; }
+.slide.scene-tension-split { padding: 4vh 5vw; }
+.slide.scene-horizon-canvas { padding: 6vh 10vw; text-align: center; }
+.slide.scene-focal-center { padding: 8vh 8vw; text-align: center; }
+.slide.scene-overview-grid { padding: 6vh 6vw; }
+.slide.scene-split-content { padding: 5vh 6vw; }
+.slide.scene-reframe-panel { padding: 5vh 7vw; }
+.slide.scene-relief-spread { padding: 6vh 7vw; }
+
+/* Intensity modifiers */
+.slide.intensity-5 { animation-duration: 0.3s; }
+.slide.intensity-4 { animation-duration: 0.5s; }
+.slide.intensity-3 { animation-duration: 0.7s; }
+.slide.intensity-2 { animation-duration: 0.9s; }
+.slide.intensity-1 { animation-duration: 1.2s; }
+
+/* Emphasis modifiers */
+.slide.emphasis-hero .slide-title {
+  font-size: var(--font-hero);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+.slide.emphasis-hero .slide-subtitle {
+  font-size: var(--font-xl);
+  opacity: 0.85;
+}
+
+/* Background treatments */
+.slide.bg-brand-gradient {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #fff;
+}
+.slide.bg-dark-mood {
+  background: linear-gradient(160deg, #0a1628 0%, #1a2744 50%, var(--color-primary) 100%);
+  color: #e0e8f0;
+}
+.slide.bg-glow-gradient {
+  background: linear-gradient(180deg,
+    var(--color-bg) 0%,
+    color-mix(in srgb, var(--color-accent) 8%, var(--color-bg)) 50%,
+    color-mix(in srgb, var(--color-primary) 5%, var(--color-bg)) 100%);
+}
+.slide.bg-accent-wash {
+  background: linear-gradient(135deg,
+    var(--color-bg) 0%,
+    color-mix(in srgb, var(--color-accent) 12%, var(--color-bg)) 100%);
+}
+.slide.bg-brand-solid {
+  background: var(--color-primary);
+  color: #fff;
+}
+.slide.bg-light-wash {
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-neutral) 100%);
+}
+.slide.bg-light {
+  background: var(--color-bg);
+}
+.slide.bg-neutral {
+  background: var(--color-neutral);
+}
+.slide.bg-dark-gradient {
+  background: linear-gradient(170deg, #0f1a2e 0%, #1a2744 40%, #0a1628 100%);
+  color: #d0d8e8;
+}
+.slide.bg-subtle {
+  background: color-mix(in srgb, var(--color-neutral) 50%, var(--color-bg));
+}
+
+/* Content elements */
+.slide-title {
+  font-family: var(--font-title), var(--font-body), system-ui, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  opacity: 0;
+  transform: translateY(10px);
+}
+.slide.active .slide-title {
+  animation: reveal-line var(--stagger-base) var(--reveal-curve) forwards;
+}
+.slide-subtitle {
+  font-family: var(--font-body), system-ui, sans-serif;
+  margin-bottom: 1em;
+  opacity: 0;
+  transform: translateY(8px);
+}
+.slide.active .slide-subtitle {
+  animation: reveal-line var(--stagger-base) var(--reveal-curve) forwards;
+  animation-delay: calc(var(--stagger-base) * 0.3);
+}
+
+.slide-lead {
+  font-size: var(--font-lead);
+  line-height: 1.5;
+  margin-bottom: 1.2em;
+  opacity: 0;
+  transform: translateY(6px);
+}
+.slide.active .slide-lead {
+  animation: reveal-line var(--stagger-base) var(--reveal-curve) forwards;
+  animation-delay: calc(var(--stagger-base) * 0.5);
+}
+
+.points-list {
+  list-style: none;
+  padding: 0;
+}
+.point-item {
+  opacity: 0;
+  transform: translateX(12px);
+  padding: 0.35em 0;
+  line-height: 1.55;
+  position: relative;
+  padding-left: 1.2em;
+}
+.point-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.point-item.revealed::before { transform: scale(1); }
+
+/* Point item reveal sequence — staggered by data-delay */
+.point-item { transition: opacity 0.4s ease, transform 0.4s ease; }
+.point-item.revealed { opacity: 1; transform: translateX(0); }
+
+/* Visual description image placeholder */
+.visual-placeholder {
+  margin-top: 1.5em;
+  padding: 2em 1.5em;
+  border-radius: var(--radius);
+  text-align: center;
+  opacity: 0;
+  font-size: var(--font-sm);
+}
+.slide.active .visual-placeholder {
+  animation: fade-in-scale 0.8s ease-out forwards;
+  animation-delay: calc(var(--stagger-base) * 2);
+}
+
+/* Speaker notes hint */
+.speaker-hint {
+  position: fixed;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-xs);
+  opacity: 0;
+  color: var(--color-text-light);
+  transition: opacity 0.6s ease;
+  max-width: 60vw;
+  text-align: center;
+}
+.slide.active .speaker-hint {
+  opacity: 0.7;
+}
+
+/* Layout grids */
+.layout-centered { text-align: center; align-items: center; }
+.layout-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2vw; }
+.layout-split { display: grid; grid-template-columns: 1fr 1fr; gap: 3vw; align-items: start; }
+.layout-asymmetric { display: grid; grid-template-columns: 1.3fr 1fr; gap: 2.5vw; }
+.layout-expansive { display: flex; flex-direction: column; align-items: center; max-width: 80vw; margin: 0 auto; }
+
+/* Data visualization placeholder */
+.data-viz {
+  background: color-mix(in srgb, var(--color-neutral) 70%, var(--color-bg));
+  border-radius: var(--radius);
+  padding: 1.5em;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-sm);
+  color: var(--color-text-light);
+}
+
+/* Navigation */
+#nav-hint {
+  position: fixed;
+  bottom: 3vh;
+  right: 4vw;
+  display: flex;
+  gap: 0.8em;
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+#nav-hint:hover { opacity: 1; }
+.nav-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--color-text-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+.nav-dot.active {
+  background: var(--color-accent);
+  transform: scale(1.4);
+  box-shadow: 0 0 8px var(--color-accent);
+}
+
+/* Progress bar */
+#progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  background: var(--color-accent);
+  transition: width 0.4s ease;
+  z-index: 20;
+}
+
+/* Section label */
+.section-badge {
+  position: absolute;
+  top: 3vh;
+  left: 4vw;
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+  font-family: var(--font-title), system-ui;
+}
+
+/* Overlay layer */
+#overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+#overlay.visible { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="overlay"></div>
+<div id="progress-bar" style="width: 14.285714285714286%"></div>
+<main id="slides-container">
+<section class="slide scene-fullscreen-hero intensity-3 pace-moderate emphasis-hero bg-brand-gradient transition-slide-fade" data-index="0" data-narrative="hook" data-emotional="curious" data-intensity="3" data-entrance="delayed-reveal">
+  <div class="section-badge">起：中国AI的觉醒时刻</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">中国 AI 崛起：从追赶者到全球领跑者</h1>
+    <p class="slide-subtitle">技术突破、生态优势与未来展望</p>
+    <div class="content-area">
+      <p class="slide-lead">中国AI已不再是跟随者，而是全球创新版图中不可忽视的竞争者。</p><ul class="points-list"><li class="point-item entrance-delayed-reveal" style="--item-index:0">从DeepSeek到宇树科技，中国AI正在全球舞台上重新定义‘创新’的含义。</li><li class="point-item entrance-delayed-reveal" style="--item-index:1">过去五年，中国AI论文引用量首次超越美国，成为全球科研新引擎。</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">一张动态世界地图，中国区域亮起蓝色光点，向外辐射连接全球各大城市，象征影响力扩散。</div>
+    </div>
+  </div>
+  <div class="speaker-hint">开场用‘你最近用过的AI产品，有多少来自中国？’引发好奇，然后展示地图光点，制造悬念。</div>
+</section>
+<section class="slide scene-overview-grid intensity-2 pace-fast emphasis-normal bg-neutral transition-slide-fade" data-index="1" data-narrative="context" data-emotional="engaged" data-intensity="2" data-entrance="active-reveal">
+  <div class="section-badge">起：中国AI的觉醒时刻</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">议程概览</h1>
+    
+    <div class="content-area">
+      <div class="layout-grid"><p class="slide-lead">本次分享将沿着‘觉醒—突破—影响—行动’的脉络，揭示中国AI的全球竞争力。</p><ul class="points-list"><li class="point-item entrance-active-reveal" style="--item-index:0">觉醒：中国AI如何从追赶到并跑？</li><li class="point-item entrance-active-reveal" style="--item-index:1">突破：论文、专利、人才——硬核数据揭示领先地位。</li><li class="point-item entrance-active-reveal" style="--item-index:2">影响：出海与标准制定，中国AI如何改变全球游戏规则？</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">一条简洁的横向时间轴，四个节点分别标注‘觉醒’‘突破’‘影响’‘行动’，每个节点配一个小图标。</div></div>
+    </div>
+  </div>
+  <div class="speaker-hint">快速过一遍议程，强调‘这不是未来学，而是正在发生的事实’，为后续数据铺垫。</div>
+</section>
+<section class="slide scene-split-content intensity-4 pace-moderate emphasis-high bg-light transition-slide-fade" data-index="2" data-narrative="evidence" data-emotional="convinced" data-intensity="4" data-entrance="solid-build">
+  <div class="section-badge">承：技术突破与生态优势</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">核心突破：从论文到专利的全面领先</h1>
+    <p class="slide-subtitle">数据揭示中国AI的硬实力</p>
+    <div class="content-area">
+      <div class="content-split"><div class="content-stack"><p class="slide-lead">中国在AI论文发表量和专利授权量上已位居全球第一，质量也在快速提升。</p></div><div class="content-stack"><div class="data-viz">bar_chart</div></div></div>
+    </div>
+  </div>
+  <div class="speaker-hint">指着数据图表说：‘这些数字不是偶然，是系统性投入的结果。’强调质量提升，避免‘数量多但质量低’的刻板印象。</div>
+</section>
+<section class="slide scene-split-content intensity-3 pace-moderate emphasis-normal bg-light transition-slide-fade" data-index="3" data-narrative="evidence" data-emotional="reflective" data-intensity="3" data-entrance="slow-dissolve">
+  <div class="section-badge">承：技术突破与生态优势</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">生态优势：数据、场景与政策的三重驱动</h1>
+    <p class="slide-subtitle">全球最大的互联网用户群带来独特的数据红利</p>
+    <div class="content-area">
+      <div class="content-split"><div class="content-stack"><p class="slide-lead">中国拥有全球最丰富的AI应用场景和最强有力的政策支持，形成了独特的创新生态。</p><ul class="points-list"><li class="point-item entrance-slow-dissolve" style="--item-index:0">数据：中国拥有14亿人口产生的海量数据，是AI训练的最佳土壤。</li><li class="point-item entrance-slow-dissolve" style="--item-index:1">场景：从移动支付到智慧城市，中国AI应用落地速度全球领先。</li><li class="point-item entrance-slow-dissolve" style="--item-index:2">政策：‘十四五’规划将AI列为重点，地方政府提供百亿级产业基金。</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">三块拼图分别代表‘数据’‘场景’‘政策’，拼合成一个完整的中国地图轮廓，内部有AI芯片和代码符号。</div></div><div class="content-stack"></div></div>
+    </div>
+  </div>
+  <div class="speaker-hint">用‘为什么是中国？’引出这三重驱动，强调生态系统的独特性，而非单一因素。</div>
+</section>
+<section class="slide scene-reframe-panel intensity-5 pace-fast emphasis-high bg-accent-wash transition-slide-fade" data-index="4" data-narrative="insight" data-emotional="surprised" data-intensity="5" data-entrance="sudden-appear">
+  <div class="section-badge">转：从应用到全球影响力</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">全球影响力：中国AI企业出海与标准制定</h1>
+    <p class="slide-subtitle">从产品输出到规则参与</p>
+    <div class="content-area">
+      <p class="slide-lead">中国AI企业正从国内市场走向全球，在多个领域参与国际标准制定。</p><ul class="points-list"><li class="point-item entrance-sudden-appear" style="--item-index:0">字节跳动TikTok推荐算法、大疆无人机AI视觉系统，已成为全球标杆产品。</li><li class="point-item entrance-sudden-appear" style="--item-index:1">商汤、旷视等企业参与制定ISO/IEC国际AI标准超30项。</li><li class="point-item entrance-sudden-appear" style="--item-index:2">中国AI企业出海收入年增长45%，东南亚、中东是主要市场。</li><li class="point-item entrance-sudden-appear" style="--item-index:3">开源生态：百度飞桨、华为MindSpore等框架全球下载量突破千万。</li><li class="point-item entrance-sudden-appear" style="--item-index:4">在AI伦理与治理领域，中国提出《全球人工智能治理倡议》，影响国际规则走向。</li><li class="point-item entrance-sudden-appear" style="--item-index:5">人才输出：中国AI工程师在硅谷、伦敦等地担任核心研发角色。</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">一张全球热力图，中国为红色高亮区，箭头指向东南亚、中东、欧洲，标注‘出海’‘标准’‘开源’等关键词。</div>
+    </div>
+  </div>
+  <div class="speaker-hint">用‘你可能不知道’开头，列举具体案例（如TikTok算法、大疆视觉），让听众感到‘原来中国AI已经这么强了’。</div>
+</section>
+<section class="slide scene-horizon-canvas intensity-4 pace-moderate emphasis-normal bg-glow-gradient transition-slide-fade" data-index="5" data-narrative="vision" data-emotional="inspired" data-intensity="4" data-entrance="rising-reveal">
+  <div class="section-badge">转：从应用到全球影响力</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">未来展望：下一个十年的关键赛道</h1>
+    <p class="slide-subtitle">大模型、具身智能与AI for Science</p>
+    <div class="content-area">
+      <p class="slide-lead">中国AI将在基础模型、机器人科学等领域持续发力，引领下一波浪潮。</p><ul class="points-list"><li class="point-item entrance-rising-reveal" style="--item-index:0">基础模型：中国正在追赶GPT-4级别的大模型，预计2025年实现突破。</li><li class="point-item entrance-rising-reveal" style="--item-index:1">机器人科学：优必选、宇树科技的人形机器人已进入工厂测试阶段。</li><li class="point-item entrance-rising-reveal" style="--item-index:2">AI for Science：中国科学家用AI预测蛋白质结构、加速新药研发。</li><li class="point-item entrance-rising-reveal" style="--item-index:3">自动驾驶：百度Apollo、小鹏汽车等推动L4级自动驾驶商业化。</li><li class="point-item entrance-rising-reveal" style="--item-index:4">AI+医疗：影像诊断、药物发现等领域，中国AI产品获批数量全球第二。</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">一条向前延伸的虚拟跑道，起点是‘2024’，终点是‘2030’，沿途标注‘基础模型’‘机器人’‘AI for Science’等里程碑。</div>
+    </div>
+  </div>
+  <div class="speaker-hint">用‘下一个十年，中国AI将改变什么？’过渡，列举具体赛道，让听众看到未来图景。</div>
+</section>
+<section class="slide scene-focal-center intensity-3 pace-slow emphasis-hero bg-brand-solid" data-index="6" data-narrative="call_to_action" data-emotional="determined" data-intensity="3" data-entrance="resolve-enter">
+  <div class="section-badge">合：未来已来，行动在即</div>
+  <div class="slide-inner">
+    <h1 class="slide-title">未来已来，你准备好了吗？</h1>
+    <p class="slide-subtitle">关注中国AI，参与时代浪潮</p>
+    <div class="content-area">
+      <p class="slide-lead">中国AI的崛起不是未来，而是正在发生的现实。让我们一起见证并参与。</p><ul class="points-list"><li class="point-item entrance-resolve-enter" style="--item-index:0">中国AI的崛起不是未来，而是正在发生的现实。</li><li class="point-item entrance-resolve-enter" style="--item-index:1">作为大学生，你可以成为这场变革的参与者——学习AI、关注政策、投身创新。</li></ul><div class="visual-placeholder" style="background:color-mix(in srgb, var(--color-neutral) 60%, var(--color-bg)); border:1px solid color-mix(in srgb, var(--color-text-light) 20%, transparent);">一张充满活力的照片：一群年轻中国学生在AI实验室里讨论，背景是代码屏幕和机器人手臂。</div>
+    </div>
+  </div>
+  <div class="speaker-hint">结尾语速放慢，目光扫视全场：‘你们不是旁观者，而是下一波浪潮的创造者。’留3秒沉默，然后致谢。</div>
+</section>
+</main>
+<nav id="nav-hint"><button class="nav-dot active" data-goto="0" aria-label="Slide 1"></button><button class="nav-dot" data-goto="1" aria-label="Slide 2"></button><button class="nav-dot" data-goto="2" aria-label="Slide 3"></button><button class="nav-dot" data-goto="3" aria-label="Slide 4"></button><button class="nav-dot" data-goto="4" aria-label="Slide 5"></button><button class="nav-dot" data-goto="5" aria-label="Slide 6"></button><button class="nav-dot" data-goto="6" aria-label="Slide 7"></button></nav>
+<script>
+// === Presentation Visual Runtime ===
+const TOTAL = 7;
+let current = 0;
+let sequenceTimer = null;
+
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.nav-dot');
+const progress = document.getElementById('progress-bar');
+const overlay = document.getElementById('overlay');
+
+function showSlide(index, direction) {
+  if (index < 0 || index >= TOTAL) return;
+
+  const oldSlide = slides[current];
+  const newSlide = slides[index];
+
+  // Transition class from old slide's relation_to_next
+  const relNext = oldSlide ? oldSlide.dataset.relation || '' : '';
+
+  // Exit old
+  if (oldSlide) {
+    oldSlide.classList.remove('active');
+    oldSlide.classList.add('exiting');
+    setTimeout(() => oldSlide.classList.remove('exiting'), 800);
+  }
+
+  // Enter new
+  newSlide.classList.add('active');
+
+  // Reveal points sequentially
+  revealSequence(newSlide);
+
+  // Update state
+  current = index;
+  updateUI();
+}
+
+function revealSequence(slide) {
+  // Clear any running sequence
+  if (sequenceTimer) clearTimeout(sequenceTimer);
+
+  const points = slide.querySelectorAll('.point-item');
+  const intensity = parseInt(slide.dataset.intensity) || 3;
+  const entrance = slide.dataset.entrance || 'active-reveal';
+
+  // Reset all points
+  points.forEach(p => p.classList.remove('revealed'));
+
+  // Calculate stagger from entrance type
+  const motionMap = {
+    'delayed-reveal': 200, 'sudden-appear': 80, 'impact-reveal': 60,
+    'slow-dissolve': 400, 'strong-enter': 150, 'tense-reveal': 120,
+    'rising-reveal': 150, 'burst-reveal': 100, 'warm-fade': 250,
+    'resolve-enter': 100, 'active-reveal': 180, 'solid-build': 200,
+    'scale-reveal': 150, 'sharp-enter': 120, 'gentle-unfold': 300,
+    'drive-forward': 120, 'respectful-fade': 500, 'questioning-reveal': 180,
+  };
+  const stagger = motionMap[entrance] || 150;
+
+  // Speed modifier from intensity: higher intensity = faster stagger
+  const speedMod = Math.max(0.4, 1 - (intensity - 1) * 0.15);
+  const delay = stagger * speedMod;
+
+  points.forEach((p, i) => {
+    setTimeout(() => {
+      p.classList.add('revealed');
+    }, delay * (i + 1));
+  });
+}
+
+function updateUI() {
+  // Progress bar
+  const pct = ((current + 1) / TOTAL) * 100;
+  progress.style.width = pct + '%';
+
+  // Dots
+  dots.forEach((d, i) => {
+    d.classList.toggle('active', i === current);
+  });
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+    e.preventDefault();
+    showSlide(current + 1);
+  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    showSlide(current - 1);
+  } else if (e.key === 'Home') {
+    showSlide(0);
+  } else if (e.key === 'End') {
+    showSlide(TOTAL - 1);
+  }
+});
+
+// Click navigation
+dots.forEach(dot => {
+  dot.addEventListener('click', () => {
+    const idx = parseInt(dot.dataset.goto);
+    showSlide(idx);
+  });
+});
+
+// Touch swipe
+let touchStartX = 0;
+document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const diff = touchStartX - e.changedTouches[0].clientX;
+  if (Math.abs(diff) > 50) {
+    showSlide(current + (diff > 0 ? 1 : -1));
+  }
+});
+
+// Click on slide to advance (except last)
+document.getElementById('slides-container').addEventListener('click', e => {
+  if (e.target.closest('.nav-dot')) return;
+  if (current < TOTAL - 1) showSlide(current + 1);
+});
+
+// Initialize
+showSlide(0);
+</script>
+</body>
+</html>

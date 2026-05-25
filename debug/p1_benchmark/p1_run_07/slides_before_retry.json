@@ -1,0 +1,269 @@
+[
+  {
+    "id": "slide_00",
+    "index": 0,
+    "structural_role": "cover",
+    "narrative_role": "hook",
+    "semantic_tags": [
+      "opening",
+      "vision"
+    ],
+    "title": "中国AI：从觉醒到引领",
+    "subtitle": "未来十年，智能重塑的东方力量",
+    "content": {
+      "lead": "中国AI正站在从技术追赶到全球引领的临界点，未来十年将定义全球智能格局。",
+      "points": [
+        "十年前，中国AI还在追赶；今天，它已在定义游戏规则。",
+        "从论文到专利，从应用到生态，中国AI正站在一个临界点上——未来十年，全球智能格局将由这里重新书写。"
+      ],
+      "visual_description": "一张中国地图，上面密布着发光的节点，节点之间由光缆连接，形成一张覆盖全国的智能网络，背景是模糊的未来城市天际线。"
+    },
+    "relation_to_prev": null,
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious",
+      "pause_after": true,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:22:55Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "excited",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "开场用'临界点'这个词制造悬念，停顿两秒，让听众思考。语气要充满期待，而不是平铺直叙地介绍。"
+    }
+  },
+  {
+    "id": "slide_01",
+    "index": 1,
+    "structural_role": "toc",
+    "narrative_role": "context",
+    "semantic_tags": [
+      "overview",
+      "roadmap"
+    ],
+    "title": "今日议程",
+    "subtitle": null,
+    "content": {
+      "lead": "我们将从三个维度透视中国AI产业的现状、突破与未来路径。",
+      "points": [
+        "第一，用数据看清中国AI的真实加速度——它到底有多快？",
+        "第二，拆解中国AI的独特路径——为什么它不同于硅谷模式？",
+        "第三，展望未来——我们如何参与并引领这场变革？"
+      ],
+      "visual_description": "一个简洁的议程路线图，三个节点依次排列，每个节点有一个代表该部分的图标（数据图表、拼图、指南针）。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused",
+      "pause_after": false,
+      "estimated_seconds": 30
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "accent",
+      "density": "medium",
+      "media_weight": "text_only",
+      "emphasis_level": "normal"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:22:55Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "engaged",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "快速过一遍议程，每个点用1-2句话概括，保持节奏轻快，为后面的重头戏做铺垫。"
+    }
+  },
+  {
+    "id": "slide_02",
+    "index": 2,
+    "structural_role": "content",
+    "narrative_role": "evidence",
+    "semantic_tags": [
+      "data",
+      "achievement",
+      "growth"
+    ],
+    "title": "数据说话：中国AI的加速度",
+    "subtitle": "从论文到产业，关键指标全球领先",
+    "content": {
+      "lead": "中国AI在论文产出、专利数量、应用落地等维度已进入全球第一梯队。",
+      "data": {
+        "type": "comparison",
+        "metrics": [
+          "论文数量",
+          "专利授权量",
+          "市场规模",
+          "独角兽占比"
+        ],
+        "values": [
+          {
+            "label": "中国",
+            "value": "30%全球占比"
+          },
+          {
+            "label": "美国",
+            "value": "15%全球占比"
+          },
+          {
+            "label": "其他",
+            "value": "55%全球占比"
+          }
+        ]
+      }
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "contrast",
+    "rhythm": {
+      "intensity": 4,
+      "pace": "fast",
+      "emotional_state": "impressed",
+      "pause_after": true,
+      "estimated_seconds": 120
+    },
+    "design": {
+      "layout_mode": "split",
+      "color_role": "data",
+      "density": "dense",
+      "media_weight": "chart_dominant",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:22:55Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "convinced",
+    "presentation_role": "data_viz",
+    "notes": {
+      "speaker_notes": "用数据说话，每个数字都要掷地有声。讲到'这些数字不是终点'时，语气要转为坚定，为下一页的洞察做过渡。"
+    }
+  },
+  {
+    "id": "slide_03",
+    "index": 3,
+    "structural_role": "content",
+    "narrative_role": "insight",
+    "semantic_tags": [
+      "vision",
+      "breakthrough",
+      "future"
+    ],
+    "title": "破局点：中国AI的独特路径",
+    "subtitle": "场景驱动、生态协同、政策加速",
+    "content": {
+      "lead": "中国AI的独特优势在于超大规模市场、完整产业链与敏捷政策响应，这构成了不可复制的创新引擎。",
+      "points": [
+        "中国AI的真正优势，不是简单的规模复制，而是三个独特要素的共振。",
+        "第一，超大规模市场：14亿人口、全球最大的互联网用户群，为AI提供了无与伦比的数据土壤和应用场景。",
+        "第二，完整产业链：从芯片设计到算法开发，从硬件制造到应用落地，中国拥有全球最完整的AI产业链。",
+        "第三，敏捷政策响应：从'新一代人工智能发展规划'到各地方政府的产业基金，政策支持的速度和力度远超其他国家。",
+        "这三者不是简单的叠加，而是形成了一个正反馈循环：市场催生需求，产业链提供解决方案，政策加速落地。",
+        "本质上，中国AI的创新引擎不是'追赶'，而是'重新定义'——用不同的路径解决同样的问题。"
+      ],
+      "visual_description": "三个相互咬合的齿轮，分别标注'市场'、'产业链'、'政策'，齿轮中心是一个发光的AI芯片，齿轮转动时带动周围的数据流。"
+    },
+    "relation_to_prev": "contrast",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "inspired",
+      "pause_after": true,
+      "estimated_seconds": 150
+    },
+    "design": {
+      "layout_mode": "full_bleed",
+      "color_role": "highlight",
+      "density": "medium",
+      "media_weight": "visual_dominant",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:22:55Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "surprised",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "这一页是整场演讲的核心洞察，语速要放慢，每个要点之间留出思考空间。讲到'重新定义'时，用手势强调，让听众感受到顿悟。"
+    }
+  },
+  {
+    "id": "slide_04",
+    "index": 4,
+    "structural_role": "thanks",
+    "narrative_role": "call_to_action",
+    "semantic_tags": [
+      "closing",
+      "summary",
+      "action"
+    ],
+    "title": "携手共创，智能未来",
+    "subtitle": "中国AI的下一个十年，由我们共同定义",
+    "content": {
+      "lead": "中国AI的崛起不是偶然，而是技术、市场与人才共振的结果。现在，是时候加入这场变革。",
+      "points": [
+        "中国AI的崛起不是偶然，而是技术、市场与人才共振的必然结果。",
+        "现在，是时候加入这场变革——无论你是开发者、创业者还是投资人，你都能在其中找到自己的位置。",
+        "未来十年，不是旁观者的十年，而是参与者的十年。不要等待，现在就开始行动。"
+      ],
+      "visual_description": "一张充满活力的图片，不同肤色、不同背景的人围坐在一起，面前是打开的笔记本电脑和投影屏幕，屏幕上显示着AI相关的代码和图表，大家正在热烈讨论。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": null,
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "hopeful",
+      "pause_after": false,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:22:55Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "determined",
+    "presentation_role": "interaction",
+    "notes": {
+      "speaker_notes": "最后一句'不要等待，现在就开始行动'要说得坚定有力，配合手势指向听众，制造紧迫感和参与感。可以在此处邀请听众扫码加入后续讨论群。"
+    }
+  }
+]

@@ -1,0 +1,606 @@
+{
+  "meta": {
+    "title": "星辰科技十年发展历程：从初创到行业领航者",
+    "style": "商务风",
+    "uuid": "a3c871f6c7e0",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "企业管理者、投资人与商业合作伙伴",
+      "knowledge_level": "mixed"
+    },
+    "occasion": {
+      "type": "corporate_annual_summary",
+      "formality": "formal"
+    },
+    "intent": {
+      "primary_goal": "inform",
+      "desired_outcome": "清晰传达企业发展历程与关键里程碑"
+    },
+    "duration": {
+      "total_minutes": 16
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "序章：星辰科技的起点与愿景",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          2
+        ],
+        "goal": "建立企业背景，引发听众兴趣，展示初创期的挑战与初心"
+      },
+      {
+        "id": "sec_02",
+        "label": "发展：关键里程碑与突破",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          3,
+          4
+        ],
+        "goal": "用数据和事实展示十年间的核心成就与增长轨迹"
+      },
+      {
+        "id": "sec_03",
+        "label": "转折：从挑战到领航",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          5,
+          6
+        ],
+        "goal": "揭示行业变革中的战略抉择，突出从追随者到领航者的跃升"
+      },
+      {
+        "id": "sec_04",
+        "label": "展望：未来蓝图与合作邀请",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          7,
+          7
+        ],
+        "goal": "总结十年经验，提出未来战略方向，号召合作伙伴共同前行"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 2,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 1,
+      "pace": "fast",
+      "emotional_state": "neutral"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "inspired"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "confident"
+    },
+    {
+      "slide_index": 5,
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "tense"
+    },
+    {
+      "slide_index": 6,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "proud"
+    },
+    {
+      "slide_index": 7,
+      "intensity": 3,
+      "pace": "slow",
+      "emotional_state": "hopeful"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening"
+      ],
+      "title": "星辰科技十年发展历程：从初创到行业领航者",
+      "subtitle": "2015-2025 · 致敬每一位同行者",
+      "content": {
+        "lead": "十年砥砺，星辰科技从一家初创公司成长为行业领航者，今天与您分享这段非凡旅程。",
+        "points": [
+          "十年前，一个车库里的梦想，如何成长为今天的行业领航者？",
+          "今天，我们不仅回顾一段非凡旅程，更要揭示星辰科技持续增长的底层逻辑。"
+        ],
+        "visual_description": "一张充满故事感的照片：夜晚的车库，微弱的灯光下，三个年轻人在电脑前专注工作的剪影，窗外是城市的万家灯火。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": false,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "curious",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "开场用提问制造悬念，停顿片刻，让听众思考。然后自然过渡到‘今天，我们不仅回顾...’。"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "navigation"
+      ],
+      "title": "汇报提纲",
+      "subtitle": null,
+      "content": {
+        "lead": "本次汇报将围绕四个篇章展开：序章、发展、转折与展望。",
+        "points": [
+          "序章：初心与起点——从车库到梦想起航",
+          "发展：十年关键里程碑与核心数据",
+          "转折：行业变局中的战略抉择",
+          "展望：领航者姿态与下一个十年的邀请"
+        ],
+        "visual_description": "一个简洁的流程示意图，四个篇章用箭头串联，每个篇章配一个代表性的小图标（如灯泡、火箭、指南针、望远镜）。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 1,
+        "pace": "fast",
+        "emotional_state": "neutral",
+        "pause_after": false,
+        "estimated_seconds": 20
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "neutral",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": "process",
+      "notes": {
+        "speaker_notes": "快速过一遍提纲，让听众对整体结构有预期。语速可以稍快。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "story",
+        "origin"
+      ],
+      "title": "初心：从车库到梦想起航",
+      "subtitle": "2015年 · 三个人的创业故事",
+      "content": {
+        "lead": "十年前，三位创始人在一间车库里写下第一行代码，星辰科技的梦想由此启程。",
+        "points": [
+          "2014年，三位创始人在一间不足20平米的车库里，写下了星辰科技的第一行代码。",
+          "他们的初心很简单：用技术让复杂的事情变简单。",
+          "没有投资，没有客户，只有一台服务器和一份改变世界的信念。"
+        ],
+        "visual_description": "一张泛黄的老照片：简陋的车库办公室，墙上贴着白板，上面画满了产品原型和流程图，角落里堆着服务器。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "inspired",
+        "pause_after": true,
+        "estimated_seconds": 90
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "image_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "excited",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用讲故事的语气，强调‘车库’、‘第一行代码’、‘改变世界的信念’这些关键词，营造创业初期的热血感。"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "milestone",
+        "growth"
+      ],
+      "title": "十年关键里程碑",
+      "subtitle": "从0到1，从1到N",
+      "content": {
+        "lead": "十年间，星辰科技跨越了产品、市场、资本三大里程碑，实现了指数级增长。",
+        "points": [
+          "2016年：首款核心产品发布，当年获得首个千万级订单，验证了市场方向。",
+          "2018年：完成B轮融资，估值突破10亿，正式进入独角兽行列。",
+          "2019年：客户数突破1000家，产品线从单一SaaS扩展到PaaS平台。",
+          "2020年：启动全球化战略，在东南亚设立首个海外办公室。",
+          "2021年：营收突破10亿大关，市场份额跃居行业前三。",
+          "2022年：成功登陆科创板，成为‘AI+企业服务’第一股。",
+          "2023年：发布新一代AI引擎，客户覆盖全球30+国家，团队突破2000人。"
+        ],
+        "visual_description": "一条横向的时间轴，从2014年到2023年，每个关键节点标注年份和核心事件，用不同颜色的图标区分产品、市场、资本里程碑。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "timeline",
+        "color_role": "brand",
+        "density": "dense",
+        "media_weight": "chart_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "timeline",
+      "notes": {
+        "speaker_notes": "语速适中，每个里程碑稍作停顿，让数字和事实产生冲击力。可以用手势指向时间轴上的对应节点。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "achievement"
+      ],
+      "title": "核心数据：增长背后的硬实力",
+      "subtitle": "营收、客户、团队全面突破",
+      "content": {
+        "lead": "过去五年，星辰科技营收复合增长率达45%，客户覆盖全球30+国家，团队规模突破2000人。",
+        "points": [
+          "过去五年，营收复合增长率达45%，远超行业平均的20%。",
+          "2023年，核心产品市场占有率达到32%，连续三年保持第一。",
+          "客户续费率高达95%，净推荐值（NPS）为78分，位居行业榜首。",
+          "研发投入占比始终保持在营收的25%以上，累计研发投入超过15亿元。",
+          "拥有超过300项授权专利，其中发明专利占比70%。",
+          "客户覆盖金融、制造、零售、医疗等8大行业，头部客户包括50家世界500强企业。",
+          "团队规模从最初的3人增长到2000+人，其中技术人才占比超过60%。"
+        ],
+        "visual_description": "一组数据可视化图表：左侧是营收增长的柱状图，右侧是市场份额的饼图，下方是客户续费率、NPS等关键指标的仪表盘。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "confident",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "brand",
+        "density": "dense",
+        "media_weight": "chart_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "用数据说话，强调‘45%’、‘32%’、‘95%’等关键数字。可以补充一句：‘这些数字背后，是客户对我们的信任。’"
+      }
+    },
+    {
+      "id": "slide_05",
+      "index": 5,
+      "structural_role": "content",
+      "narrative_role": "conflict",
+      "semantic_tags": [
+        "challenge",
+        "strategy"
+      ],
+      "title": "关键转折：行业变局中的战略抉择",
+      "subtitle": "2022年 · 从跟跑到领跑",
+      "content": {
+        "lead": "面对技术迭代与市场洗牌，星辰科技果断转型，以创新技术重新定义行业标准。",
+        "points": [
+          "2020年，行业迎来巨变：传统巨头跨界入局，低价策略冲击市场。",
+          "如果星辰科技继续走老路，将陷入同质化竞争的红海，市场份额可能被蚕食。",
+          "更严重的是，我们的核心技术架构面临被颠覆的风险。",
+          "当时，内部出现了严重分歧：是打价格战保份额，还是押注新技术赌未来？",
+          "我们选择了后者——放弃短期利润，All in 新一代AI引擎的研发。",
+          "这个决定让公司经历了长达18个月的阵痛期：营收增速放缓，部分核心员工离职。",
+          "但正是这次‘断臂求生’，让我们在2022年迎来了技术突破和市场爆发。"
+        ],
+        "visual_description": "一张对比强烈的画面：左边是红海市场中拥挤的船只（代表同质化竞争），右边是一条通往远方的蓝色航道（代表星辰科技选择的差异化路径）。"
+      },
+      "relation_to_prev": "contrast",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "slow",
+        "emotional_state": "tense",
+        "pause_after": true,
+        "estimated_seconds": 150
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "image_dominant",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "concerned",
+      "presentation_role": "comparison",
+      "notes": {
+        "speaker_notes": "语气要严肃，制造紧张感。在讲到‘断臂求生’时，语速放慢，强调‘阵痛期’和‘核心员工离职’这些冲突点。"
+      }
+    },
+    {
+      "id": "slide_06",
+      "index": 6,
+      "structural_role": "content",
+      "narrative_role": "vision",
+      "semantic_tags": [
+        "leadership",
+        "future"
+      ],
+      "title": "领航者姿态：行业影响力与生态布局",
+      "subtitle": "标准制定者 · 生态共建者",
+      "content": {
+        "lead": "如今，星辰科技不仅是市场份额第一，更主导了多项行业标准，构建了开放共赢的生态体系。",
+        "points": [
+          "今天，星辰科技已主导制定3项行业标准，成为技术规则的制定者。",
+          "我们构建了开放共赢的生态体系，合作伙伴超过500家，覆盖从芯片到应用的完整产业链。",
+          "未来三年，我们将投入50亿元，打造全球领先的AI基础设施平台。",
+          "我们的目标是：让星辰科技的技术成为行业‘水电煤’，赋能千行百业。",
+          "下一个十年，我们将从‘中国领航者’走向‘全球定义者’——定义下一代企业智能化的标准。"
+        ],
+        "visual_description": "一张宏大的生态图谱：星辰科技位于中心，向外辐射出合作伙伴、客户、开发者、标准组织等节点，形成一个繁荣的生态系统。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "proud",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "brand",
+        "density": "medium",
+        "media_weight": "icon_dominant",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "inspired",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气要充满信心和激情，强调‘定义者’、‘水电煤’、‘全球’这些关键词。展望未来时，可以稍微提高音量。"
+      }
+    },
+    {
+      "id": "slide_07",
+      "index": 7,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing",
+        "action"
+      ],
+      "title": "携手共创下一个十年",
+      "subtitle": "星辰科技 · 邀您同行",
+      "content": {
+        "lead": "星辰科技的十年，是创新与信任的十年。未来，我们期待与您一起，探索更广阔的星辰大海。",
+        "points": [
+          "星辰科技的十年，是创新与信任的十年。但最好的故事，永远是下一个。",
+          "今天，我正式邀请在座的每一位：加入我们的生态，成为下一个十年故事的共同书写者。",
+          "不要等待，现在就是最好的时机。让我们一起，探索更广阔的星辰大海。"
+        ],
+        "visual_description": "一张充满希望的画面：浩瀚的星空下，一群人（代表星辰科技和合作伙伴）正一起仰望星空，前方是一条由星光铺成的道路。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "slow",
+        "emotional_state": "hopeful",
+        "pause_after": true,
+        "estimated_seconds": 60
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-25T12:20:13Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "determined",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "最后一段话要充满感染力，目光扫视全场，用‘邀请’、‘共同书写者’、‘现在就是’这些词激发行动。结尾可以停顿，等待掌声。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-25T12:20:13Z",
+        "summary": "Planned 8 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 1,
+          "suggestions": 6
+        }
+      },
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-25T12:20:31Z",
+        "summary": "Planned 8 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 2,
+          "suggestions": 6
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-25T12:20:53Z",
+        "summary": "Filled content for 8 slides, emotional range: ['concerned', 'convinced', 'curious', 'determined', 'engaged', 'excited', 'inspired']",
+        "validation": {
+          "errors": 0,
+          "warnings": 3,
+          "suggestions": 7
+        }
+      }
+    ]
+  }
+}

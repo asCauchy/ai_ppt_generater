@@ -1,0 +1,187 @@
+{
+  "config": {
+    "topic": "中国 AI 产业发展",
+    "style": "未来科技风",
+    "pages": 7,
+    "context": {
+      "audience": {
+        "profile": "科技行业从业者与投资人",
+        "knowledge_level": "expert"
+      },
+      "occasion": {
+        "type": "conference_keynote",
+        "formality": "semi_formal"
+      },
+      "intent": {
+        "primary_goal": "inspire",
+        "desired_outcome": "激发听众对中国AI产业的信心与参与热情"
+      },
+      "duration": {
+        "total_minutes": 8
+      }
+    }
+  },
+  "total_runs": 10,
+  "success": 10,
+  "fail": 0,
+  "runs": [
+    {
+      "run_id": 1,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 1
+      },
+      "final_warnings": {
+        "E01": 1
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 33.9
+    },
+    {
+      "run_id": 2,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 2
+      },
+      "final_warnings": {
+        "E01": 2
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 33.0
+    },
+    {
+      "run_id": 3,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 1
+      },
+      "final_warnings": {
+        "E01": 1
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 35.7
+    },
+    {
+      "run_id": 4,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {},
+      "final_warnings": {},
+      "warning_delta": {},
+      "errors": 0,
+      "duration_sec": 36.3
+    },
+    {
+      "run_id": 5,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {},
+      "final_warnings": {},
+      "warning_delta": {},
+      "errors": 0,
+      "duration_sec": 35.8
+    },
+    {
+      "run_id": 6,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 2
+      },
+      "final_warnings": {
+        "E01": 2
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 34.5
+    },
+    {
+      "run_id": 7,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 1
+      },
+      "final_warnings": {
+        "E01": 1
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 37.4
+    },
+    {
+      "run_id": 8,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 2
+      },
+      "final_warnings": {
+        "E01": 2
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 34.1
+    },
+    {
+      "run_id": 9,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 1
+      },
+      "final_warnings": {
+        "E01": 1
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 36.2
+    },
+    {
+      "run_id": 10,
+      "retry_triggered": false,
+      "retry_reason": null,
+      "retry_feedback_rules": [],
+      "initial_warnings": {
+        "E01": 1
+      },
+      "final_warnings": {
+        "E01": 1
+      },
+      "warning_delta": {
+        "E01": 0
+      },
+      "errors": 0,
+      "duration_sec": 32.8
+    }
+  ]
+}

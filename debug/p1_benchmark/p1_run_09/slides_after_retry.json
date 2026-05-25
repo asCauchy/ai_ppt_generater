@@ -1,0 +1,258 @@
+[
+  {
+    "id": "slide_00",
+    "index": 0,
+    "structural_role": "cover",
+    "narrative_role": "hook",
+    "semantic_tags": [
+      "opening",
+      "vision"
+    ],
+    "title": "中国AI产业：从追赶到定义未来",
+    "subtitle": "2025-2030 技术跃迁与投资机遇",
+    "content": {
+      "lead": "中国AI正从应用创新走向基础创新，未来五年将重塑全球科技版图。",
+      "points": [
+        "过去十年，中国AI是应用创新的代名词——移动支付、短视频推荐、人脸识别，我们做到了极致。",
+        "但下一个十年，游戏规则正在改变：从'用别人的基础模型做应用'，到'定义自己的基础模型和底层架构'。",
+        "这不再是一场追赶赛，而是一场定义赛。"
+      ],
+      "visual_description": "一张从模糊到清晰的动态地图，中国版图从暗色逐渐点亮，并向外辐射出光波，象征从追赶到引领的转变。"
+    },
+    "relation_to_prev": null,
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious",
+      "pause_after": true,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:24:05Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "curious",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "开场用'过去十年'和'下一个十年'的对比制造张力，停顿在'定义赛'上，让听众思考。"
+    }
+  },
+  {
+    "id": "slide_01",
+    "index": 1,
+    "structural_role": "toc",
+    "narrative_role": "context",
+    "semantic_tags": [
+      "overview",
+      "roadmap"
+    ],
+    "title": "今日议程",
+    "subtitle": null,
+    "content": {
+      "lead": "从全球坐标到未来图景，四步看清中国AI的跃迁路径。",
+      "points": [
+        "第一站：全球坐标——中国AI现在站在哪里？",
+        "第二站：三大跃迁信号——为什么说基础创新拐点已至？",
+        "第三站：未来爆发点——AI+生物、具身智能、自主系统将如何改变游戏规则？",
+        "第四站：我们的角色——作为从业者和投资人，如何参与这场变革？"
+      ],
+      "visual_description": "一张简洁的路线图或时间轴，四个站点依次排列，每个站点配一个代表性图标（如地图、信号塔、火箭、握手）。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused",
+      "pause_after": false,
+      "estimated_seconds": 30
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "accent",
+      "density": "medium",
+      "media_weight": "text_only",
+      "emphasis_level": "normal"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:24:05Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "engaged",
+    "presentation_role": "timeline",
+    "notes": {
+      "speaker_notes": "快速带过，每站只说一句话，保持节奏。可以用手指或激光笔引导视线。"
+    }
+  },
+  {
+    "id": "slide_02",
+    "index": 2,
+    "structural_role": "content",
+    "narrative_role": "evidence",
+    "semantic_tags": [
+      "data",
+      "trend",
+      "breakthrough"
+    ],
+    "title": "从应用到基础：中国AI的三大跃迁信号",
+    "subtitle": "论文、算力、人才——硬指标全面突破",
+    "content": {
+      "lead": "中国AI在论文引用、算力规模、顶尖人才三个维度已进入全球前三，基础创新拐点已至。",
+      "points": [
+        "论文引用量全球第二，仅次于美国，且在AI顶级会议上的论文数量已连续三年保持第一。",
+        "算力规模进入全球前三，在建的智能计算中心超过30个，总算力规模年增长率超过50%。",
+        "顶尖AI人才数量从2018年的全球第十跃升至2023年的全球第三，归国人才比例持续上升。",
+        "基础模型数量从2020年的个位数增长到2024年的超过200个，覆盖语言、视觉、多模态。",
+        "更关键的是，中国在AI基础理论上的贡献正在增加——Transformer架构的变体、新型优化算法、高效训练方法。",
+        "产业界投入也在加速：2023年中国AI领域风险投资总额超过200亿美元，其中40%流向基础研究。",
+        "这些信号叠加，意味着中国AI正从'规模驱动'转向'创新驱动'，基础创新的拐点已经到来。"
+      ],
+      "visual_description": "一组上升的柱状图或折线图，展示论文引用量、算力规模、人才数量的增长趋势，重点标注'全球前三'的节点。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed",
+      "pause_after": true,
+      "estimated_seconds": 120
+    },
+    "design": {
+      "layout_mode": "split",
+      "color_role": "accent",
+      "density": "dense",
+      "media_weight": "chart_heavy",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:24:05Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "convinced",
+    "presentation_role": "data_viz",
+    "notes": {
+      "speaker_notes": "用数据说话，每一条都停顿一下，让数字产生冲击力。最后一条'拐点已经到来'要加重语气。"
+    }
+  },
+  {
+    "id": "slide_03",
+    "index": 3,
+    "structural_role": "content",
+    "narrative_role": "vision",
+    "semantic_tags": [
+      "future",
+      "opportunity",
+      "disruption"
+    ],
+    "title": "下一个爆发点：AI+生物、具身智能、自主系统",
+    "subtitle": "三大赛道将催生万亿级市场",
+    "content": {
+      "lead": "未来五年，中国AI将在生物计算、具身智能、自主决策系统三大领域实现从跟跑到领跑的跨越。",
+      "points": [
+        "AI+生物：中国在基因测序数据和临床资源上拥有全球最大规模的优势，AI驱动的药物发现将从十年缩短到一年。",
+        "具身智能：人形机器人不再是实验室玩具——中国在供应链、制造能力和场景数据上具备全球独一无二的条件。",
+        "自主系统：从自动驾驶到无人机配送，中国正在构建全球最大的自主决策系统网络，数据闭环正在加速迭代。",
+        "这三个领域有一个共同点：中国不再是跟随者，而是早期定义者——我们正在制定标准、积累数据、构建生态。",
+        "未来五年，这三个领域的市场规模将分别突破千亿美元，而中国企业的份额将从现在的不到20%增长到40%以上。",
+        "这不是预测，而是正在发生的现实——第一批AI生物公司已经进入临床，第一批人形机器人已经开始在工厂试运行。"
+      ],
+      "visual_description": "三幅并列的未来场景概念图：AI分子结构图与DNA双螺旋结合、人形机器人在工厂流水线工作、自动驾驶汽车在城市中穿行。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 5,
+      "pace": "fast",
+      "emotional_state": "inspired",
+      "pause_after": true,
+      "estimated_seconds": 150
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "highlight",
+      "density": "medium",
+      "media_weight": "icon_heavy",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:24:05Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "inspired",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "用'不再是跟随者，而是早期定义者'作为转折点，语气从客观转向激情。每个领域用一句话概括，最后一句'正在发生的现实'要坚定。"
+    }
+  },
+  {
+    "id": "slide_04",
+    "index": 4,
+    "structural_role": "thanks",
+    "narrative_role": "call_to_action",
+    "semantic_tags": [
+      "closing",
+      "summary",
+      "action"
+    ],
+    "title": "未来已来，你我共筑",
+    "subtitle": "中国AI的下一个十年，从今天开始",
+    "content": {
+      "lead": "中国AI正站在历史性拐点，每一位从业者与投资人都是这场变革的推动者。",
+      "points": [
+        "今天在座的每一位，都是这场变革的参与者——无论是投资、创业还是研究，你的选择将影响未来十年的科技版图。",
+        "不要等待，现在就是最好的入场时机：基础设施已经就绪，人才正在汇聚，资本正在涌入。",
+        "加入我们，一起定义中国AI的下一个十年。"
+      ],
+      "visual_description": "一张充满动感的画面：无数光点汇聚成一个发光的中国地图轮廓，象征每个人的参与共同塑造未来。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": null,
+    "rhythm": {
+      "intensity": 3,
+      "pace": "slow",
+      "emotional_state": "hopeful",
+      "pause_after": false,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:24:05Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "determined",
+    "presentation_role": "interaction",
+    "notes": {
+      "speaker_notes": "最后一句'加入我们'要直视观众，手势打开，营造邀请感。可以设计一个简单的互动环节，如让观众扫码加入社区。"
+    }
+  }
+]

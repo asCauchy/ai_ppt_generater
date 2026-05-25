@@ -1,0 +1,273 @@
+[
+  {
+    "id": "slide_00",
+    "index": 0,
+    "structural_role": "cover",
+    "narrative_role": "hook",
+    "semantic_tags": [
+      "opening",
+      "vision"
+    ],
+    "title": "中国AI产业：从觉醒到领航",
+    "subtitle": "未来十年，智能生态的全球新坐标",
+    "content": {
+      "lead": "中国AI正站在从技术突破到生态爆发的历史拐点，未来十年将重塑全球智能格局。",
+      "points": [
+        "过去十年，我们见证了AI从实验室走向产业；未来十年，中国将从技术跟随者转变为全球规则的定义者。",
+        "这不是一个渐进的过程，而是一次非线性的跃迁——当数据、算力与场景形成共振，爆发将远超想象。"
+      ],
+      "visual_description": "一张从地平线升起的旭日图，中国地图轮廓被数据流和光点点亮，象征觉醒与领航。",
+      "emotional_role": "excited",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "开场用坚定的语气，配合手势指向屏幕上的光点，营造宏大叙事感。"
+      }
+    },
+    "relation_to_prev": null,
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious",
+      "pause_after": true,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:21:43Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    }
+  },
+  {
+    "id": "slide_01",
+    "index": 1,
+    "structural_role": "toc",
+    "narrative_role": "context",
+    "semantic_tags": [
+      "overview",
+      "roadmap"
+    ],
+    "title": "今日议程",
+    "subtitle": null,
+    "content": {
+      "lead": "我们将从三个维度透视中国AI产业的跃迁路径与未来机遇。",
+      "points": [
+        "第一部分：数据与算力的双轮驱动——中国AI的硬实力底座。",
+        "第二部分：从单点突破到全链协同——生态爆发的内在逻辑。",
+        "第三部分：共赴智能新纪元——我们每个人的角色与行动。"
+      ],
+      "visual_description": "简洁的议程图，三个模块以箭头或递进关系排列，背景为科技感网格。",
+      "emotional_role": "engaged",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "快速过一遍议程，用眼神与听众建立连接，为后续内容铺垫期待。"
+      }
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused",
+      "pause_after": false,
+      "estimated_seconds": 30
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "accent",
+      "density": "medium",
+      "media_weight": "text_only",
+      "emphasis_level": "normal"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:21:43Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    }
+  },
+  {
+    "id": "slide_02",
+    "index": 2,
+    "structural_role": "content",
+    "narrative_role": "evidence",
+    "semantic_tags": [
+      "data",
+      "breakthrough"
+    ],
+    "title": "关键跃迁：数据与算力的双轮驱动",
+    "subtitle": null,
+    "content": {
+      "lead": "中国AI在算力规模、数据资产和场景落地三个维度已形成全球领先的飞轮效应。",
+      "points": [
+        "中国算力规模已占全球31%，仅次于美国，且增速是美国的2.3倍。",
+        "数据资产：中国拥有全球最大的互联网用户群体，年产生数据量超8ZB，是AI训练的天然沃土。",
+        "场景落地：从智慧城市到智能制造，中国AI应用场景数量是美国的1.7倍。",
+        "飞轮效应正在加速：更多数据→更好模型→更多应用→更多数据。",
+        "但挑战依然存在：高端芯片受限、基础软件生态薄弱，这是我们必须跨越的鸿沟。"
+      ],
+      "visual_description": "一张动态飞轮图，数据、算力、场景三个齿轮相互咬合转动，配以关键数字标注。",
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "content": {
+        "data": {
+          "type": "comparison",
+          "metrics": [
+            {
+              "label": "算力规模全球占比",
+              "value": "31%",
+              "context": "全球第二"
+            },
+            {
+              "label": "数据年产量",
+              "value": "8ZB",
+              "context": "全球第一"
+            },
+            {
+              "label": "应用场景数量",
+              "value": "1.7x",
+              "context": "对比美国"
+            }
+          ]
+        }
+      },
+      "notes": {
+        "speaker_notes": "用数据说话，每一条都停顿片刻让听众消化。最后一句转折要压低声音，制造张力。"
+      }
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed",
+      "pause_after": true,
+      "estimated_seconds": 120
+    },
+    "design": {
+      "layout_mode": "split",
+      "color_role": "highlight",
+      "density": "medium",
+      "media_weight": "chart_dominant",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:21:43Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    }
+  },
+  {
+    "id": "slide_03",
+    "index": 3,
+    "structural_role": "content",
+    "narrative_role": "insight",
+    "semantic_tags": [
+      "ecosystem",
+      "future"
+    ],
+    "title": "生态爆发：从单点突破到全链协同",
+    "subtitle": null,
+    "content": {
+      "lead": "当基础层、模型层与应用层形成闭环，中国AI将催生前所未有的产业生态。",
+      "points": [
+        "真正改变游戏规则的，不是单点技术的领先，而是基础层、模型层与应用层之间的闭环协同。",
+        "基础层：国产芯片与算力基础设施正在从'可用'走向'好用'，华为昇腾、百度昆仑等已形成生态。",
+        "模型层：从通用大模型到垂直行业模型，中国正在走一条'大而全+专而精'的双轨路线。",
+        "应用层：AI不再只是工具，而是重构行业逻辑的引擎——医疗、教育、制造正在被重新定义。",
+        "当这三层形成闭环，我们将看到前所未有的网络效应：每一层的发展都在加速其他两层。",
+        "这不是线性增长，而是指数级爆发——就像移动互联网时代的十倍速，但规模更大、速度更快。"
+      ],
+      "visual_description": "三层同心圆或金字塔结构图，从内到外依次为基础层、模型层、应用层，箭头循环连接，象征闭环。",
+      "emotional_role": "surprised",
+      "presentation_role": "process",
+      "notes": {
+        "speaker_notes": "语速放慢，强调'闭环'和'指数级'两个关键词。用手势模拟三层叠加的效果。"
+      }
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "inspired",
+      "pause_after": true,
+      "estimated_seconds": 150
+    },
+    "design": {
+      "layout_mode": "diagram",
+      "color_role": "accent",
+      "density": "dense",
+      "media_weight": "diagram_dominant",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:21:43Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    }
+  },
+  {
+    "id": "slide_04",
+    "index": 4,
+    "structural_role": "thanks",
+    "narrative_role": "call_to_action",
+    "semantic_tags": [
+      "closing",
+      "action"
+    ],
+    "title": "共赴智能新纪元",
+    "subtitle": "加入这场变革，定义下一个十年",
+    "content": {
+      "lead": "中国AI的未来不是旁观者的未来，而是每一位参与者的共同创造。",
+      "points": [
+        "中国AI的未来不是少数巨头的游戏，而是每一位在座者的机遇——开发者、创业者、投资人。",
+        "现在就是行动的最佳时机：加入开源社区、投资垂直赛道、或者将AI融入你的业务。",
+        "不要等待，因为未来十年正在被今天的选择定义。让我们一起，共赴智能新纪元。"
+      ],
+      "visual_description": "一张充满希望的全景图：无数光点汇聚成一条光河，流向远方地平线上的智能城市。",
+      "emotional_role": "determined",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "最后一段要充满号召力，目光扫视全场，用'你'直接指向听众。结尾留3秒沉默，让力量沉淀。"
+      }
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": null,
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "determined",
+      "pause_after": false,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:21:43Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "run_dir": "G:\\codes\\ai_ppt_generator\\debug\\run_06",
+  "timestamp": "2026-05-25T20:20:53.336300",
+  "steps": [
+    {
+      "agent": "narrative_planner",
+      "errors": 0,
+      "warnings": 1,
+      "suggestions": 6,
+      "error_details": [],
+      "warning_details": [
+        {
+          "rule": "N06",
+          "message": "CTA slide has only 1 action technique(s) — needs ≥2"
+        }
+      ]
+    },
+    {
+      "agent": "narrative_planner",
+      "errors": 0,
+      "warnings": 2,
+      "suggestions": 6,
+      "error_details": [],
+      "warning_details": [
+        {
+          "rule": "N02",
+          "message": "Conflict slide has only 0 tension dimension(s) — needs ≥2"
+        },
+        {
+          "rule": "N05",
+          "message": "Vision slide has only 0 future dimension(s) — needs ≥2"
+        }
+      ]
+    },
+    {
+      "agent": "content_writer",
+      "errors": 0,
+      "warnings": 3,
+      "suggestions": 7,
+      "error_details": [],
+      "warning_details": [
+        {
+          "rule": "M07",
+          "message": "presentation_role=data_viz 但 content.data 为空"
+        },
+        {
+          "rule": "E01",
+          "message": "emotional_role='curious' conflicts with content tone: no curious keywords found in content"
+        },
+        {
+          "rule": "E01",
+          "message": "emotional_role='determined' conflicts with content tone: no determined keywords found in content"
+        }
+      ]
+    }
+  ]
+}

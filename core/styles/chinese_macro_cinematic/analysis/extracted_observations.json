@@ -1,0 +1,87 @@
+{
+  "source": "PPT时间轴排版.pptx — 中国商业演示时间轴模板合集",
+  "brand": "中国商业演示",
+  "typography": {
+    "headline_weight": 600,
+    "body_weight": 400,
+    "scale_contrast": 3.0,
+    "hierarchy_depth": 2,
+    "tracking_character": "neutral",
+    "font_character": "sans_geometric",
+    "title_font_hint": "思源黑体, 微软雅黑",
+    "body_font_hint": "",
+    "line_height_ratio": 1.4,
+    "alignment_dominant": "left",
+    "max_line_length_ch": 60,
+    "notes": ""
+  },
+  "color": {
+    "palette_mood": "neutral",
+    "primary_hex": "#1A1A1A",
+    "accent_hex": "#0066CC",
+    "background_hex": "#FFFFFF",
+    "surface_hex": "#F5F5F5",
+    "text_primary_hex": "#1A1A1A",
+    "text_secondary_hex": "#666666",
+    "dark_mode": false,
+    "saturation_level": "low",
+    "contrast_ratio": 4.5,
+    "accent_usage": "sparing",
+    "gradient_presence": "minimal",
+    "notes": ""
+  },
+  "spacing": {
+    "whitespace_ratio": 0.3,
+    "padding_character": "moderate",
+    "grid_rigor": "moderate",
+    "element_gap_ratio": 1.0,
+    "vertical_rhythm": "regular",
+    "density_feel": "moderate",
+    "margin_asymmetry": "symmetric",
+    "notes": ""
+  },
+  "composition": {
+    "focal_strategy": "split",
+    "asymmetry_level": "balanced",
+    "depth_layers": 2,
+    "foreground_treatment": "direct",
+    "background_treatment": "flat",
+    "element_count_per_frame": "moderate(7-10)",
+    "visual_weight_distribution": "balanced",
+    "notes": ""
+  },
+  "motion": {
+    "easing_philosophy": "ease_out",
+    "speed_range": "moderate",
+    "stagger_character": "sequential",
+    "entrance_style": "fade_up",
+    "transition_style": "dissolve",
+    "duration_feel": "moderate",
+    "scale_variation_presence": false,
+    "motion_density": "sparse",
+    "notes": ""
+  },
+  "surface": {
+    "surface_quality": "flat",
+    "depth_treatment": "shadow",
+    "accent_treatment": "minimal",
+    "noise_presence": false,
+    "glass_presence": false,
+    "overlay_usage": "none",
+    "corner_treatment": "rounded",
+    "notes": ""
+  },
+  "emotional": {
+    "primary_mood": "confident",
+    "pacing_character": "measured",
+    "tension_profile": "gentle",
+    "gravitas_level": 3,
+    "energy_level": 3,
+    "warmth_level": 2,
+    "notes": "稳定权威清晰可信 — 商业演示气质，非电影感"
+  },
+  "evaluation_score": 25,
+  "extractor_confidence": 0.95,
+  "raw_notes": "",
+  "pipeline_run_at": "2026-05-25T12:17:33Z"
+}

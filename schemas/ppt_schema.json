@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PPT Structure Schema",
+  "type": "object",
+  "required": ["total_pages", "slides"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
+        "style": {"type": "string", "enum": ["学术风", "商务风", "科技风", "党政风"]}
+      }
+    },
+    "total_pages": {
+      "type": "integer",
+      "minimum": 3,
+      "maximum": 100
+    },
+    "slides": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": ["page_number", "type", "title", "content"],
+        "properties": {
+          "page_number": {"type": "integer", "minimum": 1},
+          "type": {"type": "string", "enum": ["cover", "toc", "content", "summary", "thanks"]},
+          "title": {"type": "string", "minLength": 1, "maxLength": 20},
+          "subtitle": {"type": "string"},
+          "content": {"type": "string", "minLength": 1},
+          "image_suggestion": {"type": "string"},
+          "visual_notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "source": "PPT时间轴排版.pptx — 中国商业演示时间轴模板合集",
+  "style_name": "timeline_commercial",
+  "style_description": "中国商业演示-inspired style with confident emotional register. sans geometric typography, flat surfaces, moderate spacing.",
+  "inherits": null,
+  "typography": {
+    "title_font": "思源黑体, 微软雅黑",
+    "body_font": "SF Pro Text, system-ui, -apple-system, sans-serif",
+    "scale_mega": 72,
+    "scale_display": 56,
+    "scale_hero": 44,
+    "scale_h1": 32,
+    "scale_h2": 24,
+    "scale_body": 16,
+    "headline_weight": 600,
+    "body_weight": 400,
+    "tracking": -0.01,
+    "line_height_title": 1.12,
+    "line_height_body": 1.4,
+    "max_width_ch": 60,
+    "alignment_dominant": "left",
+    "role_overrides": {
+      "hook": {
+        "title_weight": 600,
+        "title_tracking": -0.01
+      },
+      "breathing_page": {
+        "title_weight": 300
+      }
+    }
+  },
+  "color": {
+    "primary": "#1A1A1A",
+    "primary_light": "#6a6a6a",
+    "primary_dark": "#0a0a0a",
+    "accent": "#0066CC",
+    "accent_light": "#599bdd",
+    "accent_dark": "#002851",
+    "surface_bg": "#FFFFFF",
+    "surface_neutral": "#F5F5F5",
+    "surface_dark": "#e5e5e5",
+    "surface_mid": "#b2b2b2",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#666666",
+    "text_tertiary": "#999999",
+    "text_on_dark": "#ffffff",
+    "text_on_dark_secondary": "rgba(255,255,255, 0.7)",
+    "text_on_brand": "#FFFFFF",
+    "text_on_brand_secondary": "rgba(255,255,255,0.8)",
+    "mood": "neutral",
+    "saturation": "low"
+  },
+  "motion": {
+    "default_easing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "entrance_base_stagger": 120,
+    "entrance_style": "active_reveal",
+    "speed_moderate": 1.0,
+    "speed_fast": 0.5,
+    "speed_slow": 1.8,
+    "scale_variation_enabled": false,
+    "transition_default_type": "slide_fade",
+    "transition_default_duration": 500,
+    "emotional_entrance_overrides": {}
+  },
+  "composition": {
+    "default_negative_space": 0.3,
+    "hook_negative_space": 0.45,
+    "conflict_negative_space": 0.12,
+    "cta_negative_space": 0.5,
+    "default_asymmetry": "balanced",
+    "focal_strategy": "split",
+    "depth_layers_default": [
+      "ambient_glow",
+      "foreground_text"
+    ],
+    "role_layer_overrides": {},
+    "container_class_overrides": {}
+  },
+  "surface": {
+    "surface_quality": "flat",
+    "glass_enabled": false,
+    "noise_enabled": false,
+    "glow_enabled": false,
+    "corner_radius": "12px",
+    "background_overrides": {},
+    "surface_overrides": {
+      "evidence": {
+        "ambient": "none"
+      },
+      "recap": {
+        "ambient": "none"
+      }
+    }
+  },
+  "spacing_unit": 8,
+  "default_intensity": 3,
+  "density_overrides": {},
+  "rhythm_overrides": {},
+  "emotional_overrides": {},
+  "metadata_tags": [
+    "中国商业演示",
+    "confident",
+    "sans geometric",
+    "flat"
+  ],
+  "metadata_best_for": [
+    "executive_presentations",
+    "product_keynotes",
+    "design_reviews"
+  ],
+  "metadata_avoid_for": [],
+  "confidence": 0.95,
+  "pipeline_run_at": "2026-05-25T12:17:33Z"
+}

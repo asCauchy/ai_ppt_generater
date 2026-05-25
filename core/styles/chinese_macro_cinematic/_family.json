@@ -1,0 +1,50 @@
+{
+  "family_name": "chinese_macro_cinematic",
+  "version": "1.0",
+  "philosophy": "Grandeur, collective power, historical momentum. The visual language of Chinese state communications, epic national documentaries, and large-venue political theater. Scale conveys importance. Red is not decoration — it is civilization.",
+
+  "core_principles": [
+    "Scale creates gravity — bigger is more important, unapologetically",
+    "Red and gold are semantic, not decorative — they carry civilizational weight",
+    "Center-focus is strength — decentralized compositions dilute authority",
+    "Motion is majestic, not playful — slow builds into powerful reveals",
+    "Collective before individual — the frame holds the nation, not the person",
+    "Typography carries tradition — serif for authority, sans for modernity",
+    "Contrast is dramatic — light/dark, large/small, fast/slow"
+  ],
+
+  "aesthetic_vocabulary": {
+    "surfaces": ["gradient", "atmospheric", "textured", "solid"],
+    "motion": ["dramatic", "emphatic", "slow_build", "impact"],
+    "typography": ["serif_authoritative", "sans_modern", "calligraphic"],
+    "depth": ["parallax", "layered", "atmospheric_haze"],
+    "spacing": ["moderate", "tight", "strategic"],
+    "color_mood": ["warm", "dramatic", "patriotic", "cosmic"],
+    "transitions": ["sweep", "zoom", "intensify", "hard_cut"]
+  },
+
+  "forbidden_patterns": [
+    "Western minimalist 'white space as luxury' aesthetic",
+    "Playful/bouncy motion (undermines gravitas)",
+    "Small type as design choice (authority requires legibility)",
+    "Cool/desaturated palettes as primary mood",
+    "Fragmented layouts that lack clear focal center",
+    "Casual/slang typographic voice",
+    "Glass morphism (feels insubstantial for this tradition)"
+  ],
+
+  "parent_traditions": [
+    "Chinese propaganda poster art (1930s-1970s)",
+    "CCTV documentary cinematography",
+    "National Day parade visual design",
+    "Chinese ink painting spatial philosophy",
+    "Socialist realist monumental aesthetics",
+    "Contemporary Chinese sci-fi film (Wandering Earth)"
+  ],
+
+  "emotional_range": {
+    "primary": ["determined", "inspired", "solemn", "confident"],
+    "secondary": ["excited", "shocked", "hopeful"],
+    "avoid": ["casual", "playful", "skeptical", "whimsical"]
+  }
+}

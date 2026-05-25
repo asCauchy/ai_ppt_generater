@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "星辰科技十年发展历程：从初创到行业领航者",
+    "style": "商务风",
+    "uuid": "a3c871f6c7e0",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "企业管理者、投资人与商业合作伙伴",
+      "knowledge_level": "mixed"
+    },
+    "occasion": {
+      "type": "corporate_annual_summary",
+      "formality": "formal"
+    },
+    "intent": {
+      "primary_goal": "inform",
+      "desired_outcome": "清晰传达企业发展历程与关键里程碑"
+    },
+    "duration": {
+      "total_minutes": 16
+    }
+  },
+  "narrative_arc": {
+    "structure": "",
+    "sections": []
+  },
+  "rhythm_map": [],
+  "slides": [],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "init",
+    "pipeline_version": "1.0",
+    "agents_involved": [],
+    "history": []
+  }
+}

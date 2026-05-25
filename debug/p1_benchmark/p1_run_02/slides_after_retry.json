@@ -1,0 +1,248 @@
+[
+  {
+    "id": "slide_00",
+    "index": 0,
+    "structural_role": "cover",
+    "narrative_role": "hook",
+    "semantic_tags": [
+      "opening",
+      "vision"
+    ],
+    "title": "中国AI产业：从追赶到引领的下一站",
+    "subtitle": "科技浪潮中的中国力量",
+    "content": {
+      "lead": "中国AI产业正站在全球创新的最前沿，下一个十年将由我们定义。",
+      "points": [
+        "十年前，我们还在问'中国AI能否追上世界'；今天，问题变成了'世界如何跟上中国'。",
+        "从全球最大规模的产业应用到最活跃的AI人才池，中国AI已不再是追赶者——下一个十年，我们将定义规则。"
+      ],
+      "visual_description": "一张动态世界地图，中国区域高亮并向外辐射光点，象征影响力扩散。"
+    },
+    "relation_to_prev": null,
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious",
+      "pause_after": true,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:19:59Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "excited",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "开场用对比制造悬念，语速中等，眼神扫视全场，停顿在'定义规则'处。"
+    }
+  },
+  {
+    "id": "slide_01",
+    "index": 1,
+    "structural_role": "toc",
+    "narrative_role": "context",
+    "semantic_tags": [
+      "overview",
+      "roadmap"
+    ],
+    "title": "今日航向",
+    "subtitle": null,
+    "content": {
+      "lead": "我们将从全球坐标、技术突破、未来转折到行动号召，全景透视中国AI的崛起之路。",
+      "points": [
+        "第一站：全球坐标——中国AI在世界版图中的真实位置。",
+        "第二站：技术突破——芯片、大模型、产业应用，全栈创新的硬核事实。",
+        "第三站：转折点——从应用创新到原始创新的范式跃迁。",
+        "终点：行动号召——在座每一位如何参与下一个十年。"
+      ],
+      "visual_description": "简洁的路线图或进度条图标，四个节点依次亮起。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused",
+      "pause_after": false,
+      "estimated_seconds": 30
+    },
+    "design": {
+      "layout_mode": "grid",
+      "color_role": "accent",
+      "density": "medium",
+      "media_weight": "text_only",
+      "emphasis_level": "normal"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:19:59Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "engaged",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "快速带过，手势配合四个方向，建立清晰的旅程预期。"
+    }
+  },
+  {
+    "id": "slide_02",
+    "index": 2,
+    "structural_role": "content",
+    "narrative_role": "evidence",
+    "semantic_tags": [
+      "data",
+      "breakthrough"
+    ],
+    "title": "技术突破：从芯片到算法的全栈创新",
+    "subtitle": "核心引擎已就位",
+    "content": {
+      "lead": "中国在AI芯片、大模型和产业应用三大领域已实现关键突破，构建起全球最完整的AI生态。",
+      "points": [
+        "AI芯片：华为昇腾、寒武纪等国产芯片在推理性能上已接近国际顶尖水平，2023年国产AI芯片出货量同比增长超过150%。",
+        "大模型：百度文心、阿里通义、智谱GLM等国产大模型在多项基准测试中超越GPT-3.5，部分指标逼近GPT-4。",
+        "产业应用：中国AI在制造业、医疗、金融等领域的渗透率全球领先，AI+工业质检效率提升300%。",
+        "人才储备：中国AI研究人员数量全球第二，AI论文发表量和引用量均居世界首位。",
+        "生态完整：从底层芯片到框架（PaddlePaddle、MindSpore）到应用，中国拥有全球最完整的AI产业链。"
+      ],
+      "visual_description": "一组数据图表：芯片性能对比曲线、大模型排名雷达图、产业渗透率柱状图。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed",
+      "pause_after": true,
+      "estimated_seconds": 120
+    },
+    "design": {
+      "layout_mode": "split",
+      "color_role": "highlight",
+      "density": "medium",
+      "media_weight": "text_and_visual",
+      "emphasis_level": "high"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:19:59Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "convinced",
+    "presentation_role": "data_viz",
+    "notes": {
+      "speaker_notes": "用数据说话，语速略快，每一条都指向'中国AI已经很强'的结论。"
+    }
+  },
+  {
+    "id": "slide_03",
+    "index": 3,
+    "structural_role": "content",
+    "narrative_role": "insight",
+    "semantic_tags": [
+      "vision",
+      "turning_point"
+    ],
+    "title": "转折点：从应用创新到原始创新",
+    "subtitle": "引领未来的新范式",
+    "content": {
+      "lead": "中国AI正从应用层创新向基础层原始创新跨越，这是全球AI格局重塑的关键时刻。",
+      "points": [
+        "真正的转折不在于我们做了多少应用，而在于我们开始定义基础理论——比如清华团队的'类脑计算'新范式。",
+        "当中国AI从'把论文变成产品'转向'把问题变成论文'，全球AI的权力结构将发生根本性位移。"
+      ],
+      "visual_description": "一座冰山，水面之上是应用（App），水面之下是基础理论（Theory），强调水下部分的巨大。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": "progression",
+    "rhythm": {
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "inspired",
+      "pause_after": true,
+      "estimated_seconds": 150
+    },
+    "design": {
+      "layout_mode": "fullscreen",
+      "color_role": "accent",
+      "density": "sparse",
+      "media_weight": "text_and_visual",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:19:59Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "surprised",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "语速放慢，制造顿悟感。停顿在'根本性位移'处，让听众消化。"
+    }
+  },
+  {
+    "id": "slide_04",
+    "index": 4,
+    "structural_role": "thanks",
+    "narrative_role": "call_to_action",
+    "semantic_tags": [
+      "closing",
+      "action"
+    ],
+    "title": "共赴星辰：加入中国AI的下一个十年",
+    "subtitle": "未来已来，我们同行",
+    "content": {
+      "lead": "中国AI的未来需要每一位在座者的智慧与投入，让我们携手定义下一个智能时代。",
+      "points": [
+        "下一个十年，中国AI需要的不只是工程师和科学家，更需要你们——在座每一位的行业智慧与跨界勇气。",
+        "现在就是行动的时刻：加入开源社区、投资基础研究、或在自己的领域落地第一个AI场景。",
+        "不要等待未来——我们就是定义未来的人。"
+      ],
+      "visual_description": "一张充满活力的群体协作画面，不同背景的人围绕AI主题共同创造。"
+    },
+    "relation_to_prev": "progression",
+    "relation_to_next": null,
+    "rhythm": {
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "hopeful",
+      "pause_after": false,
+      "estimated_seconds": 45
+    },
+    "design": {
+      "layout_mode": "centered",
+      "color_role": "brand",
+      "density": "sparse",
+      "media_weight": "text_only",
+      "emphasis_level": "hero"
+    },
+    "provenance": {
+      "generated_by": "narrative_planner_v1",
+      "generated_at": "2026-05-21T08:19:59Z",
+      "revised_by": [
+        "content_writer_v1"
+      ]
+    },
+    "emotional_role": "determined",
+    "presentation_role": null,
+    "notes": {
+      "speaker_notes": "语气从理性转向感性，眼神与观众互动，最后一句用坚定而温暖的口吻。"
+    }
+  }
+]

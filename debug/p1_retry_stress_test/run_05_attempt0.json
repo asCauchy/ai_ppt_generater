@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "title": "中国 AI 崛起",
+    "style": "future_tech",
+    "uuid": "a624269c4fc4",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "大学生",
+      "knowledge_level": "intermediate"
+    },
+    "occasion": {
+      "type": "tech_conference",
+      "formality": "semi_formal"
+    },
+    "intent": {
+      "primary_goal": "persuade",
+      "desired_outcome": "让听众相信中国AI已具备全球竞争力"
+    },
+    "duration": {
+      "total_minutes": 15
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "觉醒：中国AI的全球坐标",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          1
+        ],
+        "goal": "建立认知：中国AI已不再是追赶者，而是全球竞争格局中的关键力量"
+      },
+      {
+        "id": "sec_02",
+        "label": "突破：从技术到生态的全面崛起",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          2,
+          3
+        ],
+        "goal": "用数据和案例证明中国AI在技术、产业、生态层面的全球竞争力"
+      },
+      {
+        "id": "sec_03",
+        "label": "转折：挑战与未来机遇",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          4,
+          5
+        ],
+        "goal": "揭示中国AI面临的挑战，并转化为未来发展的独特机遇"
+      },
+      {
+        "id": "sec_04",
+        "label": "行动：成为AI时代的参与者",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          6,
+          6
+        ],
+        "goal": "号召听众关注、学习并参与中国AI浪潮"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "inspired"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 5,
+      "pace": "slow",
+      "emotional_state": "concerned"
+    },
+    {
+      "slide_index": 5,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "hopeful"
+    },
+    {
+      "slide_index": 6,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "motivated"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening",
+        "future_tech"
+      ],
+      "title": "中国AI崛起：从追赶者到定义者",
+      "subtitle": "全球竞争格局下的技术革命与青年机遇",
+      "content": {
+        "lead": "中国AI已从技术追随者转变为全球创新引领者，正在重塑世界科技版图",
+        "points": [
+          "十年前，全球AI版图上几乎看不到中国的名字；今天，中国贡献了全球近三分之一的AI论文，专利申请量稳居世界第一。",
+          "从被定义到参与定义，中国AI正在改写游戏规则——不是简单的规模追赶，而是从应用场景到技术路径的全面创新。"
+        ],
+        "visual_description": "一张世界地图，中国区域被高亮，周围环绕着代表AI论文、专利和产业的动态光点，暗示从边缘到中心的崛起轨迹。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "curious",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用对比数据开场，制造悬念。停顿一秒，让听众消化'从被定义到参与定义'这句话。"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "overview",
+        "future_tech"
+      ],
+      "title": "议程：中国AI的崛起之路",
+      "subtitle": null,
+      "content": {
+        "lead": "从全球坐标到技术突破，再到未来机遇，我们将层层深入中国AI的崛起全景",
+        "points": [
+          "首先，我们用硬核数据看清中国AI在全球的真实坐标——不只是排名，更是竞争力。",
+          "接着，深入生态内部，看大模型如何从实验室走向工厂、医院和田间地头。",
+          "然后，直面最真实的挑战：芯片封锁和人才缺口，以及危机中孕育的转机。",
+          "最后，展望未来十年，中国AI将如何定义下一个技术时代。"
+        ],
+        "visual_description": "一条简洁的路径图，四个节点依次标注：全球坐标 → 生态崛起 → 挑战与转机 → 未来十年。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "fast",
+        "emotional_state": "focused",
+        "pause_after": false,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": "timeline",
+      "notes": {
+        "speaker_notes": "快速带过，用'首先、接着、然后、最后'建立清晰的路线感，让听众知道接下来要经历什么。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "future_tech"
+      ],
+      "title": "全球坐标：中国AI的硬核数据",
+      "subtitle": "论文、专利、产业规模全面领先",
+      "content": {
+        "lead": "中国在AI论文数量、专利申请和产业应用规模上已位居全球前列，形成不可忽视的竞争力",
+        "points": [
+          "2023年，中国AI论文发表量超过12万篇，占全球总量的28%，连续五年位居世界第一。",
+          "在自然语言处理和计算机视觉两大核心领域，中国论文被引次数已超越美国，排名全球首位。",
+          "AI专利申请量占全球40%以上，是第二名美国的两倍多——其中企业申请占比超过60%。",
+          "产业规模方面，2023年中国AI核心产业规模突破5000亿元人民币，带动相关产业超过2万亿元。",
+          "全球AI独角兽企业中，中国占据约30家，仅次于美国，覆盖自动驾驶、AI制药、计算机视觉等关键赛道。",
+          "在AI应用渗透率上，中国在安防、金融、医疗影像三个领域已实现规模化落地，远超欧洲和日本。"
+        ],
+        "visual_description": "一组动态柱状图或雷达图，对比中国、美国、欧洲在论文、专利、产业规模、独角兽数量四个维度的数据。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": true,
+        "estimated_seconds": 90
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "dense",
+        "media_weight": "chart_heavy",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "数据密集，每一条都要配合屏幕上的可视化展示。念完数据后，加一句总结：'这些数字不是偶然，是系统性投入的结果。'"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "insight",
+      "semantic_tags": [
+        "case_study",
+        "future_tech"
+      ],
+      "title": "生态崛起：从大模型到产业落地",
+      "subtitle": "百度、华为、字节跳动等企业的AI实践",
+      "content": {
+        "lead": "中国AI企业已构建从底层芯片到上层应用的完整生态，大模型与产业场景深度融合",
+        "points": [
+          "中国AI生态的真正力量不在于单一技术突破，而在于从底层芯片到上层应用的完整闭环——这是硅谷之外唯一成型的AI生态。",
+          "大模型领域，百度文心、阿里通义、科大讯飞星火等国产大模型在中文理解上已超越GPT-4，并在教育、医疗、政务场景中深度落地。",
+          "产业落地的秘密在于'场景驱动'：中国拥有全球最大的制造业、零售业和交通网络，AI不是锦上添花，而是效率革命的必需品。",
+          "更关键的是，中国AI企业正在从'应用创新'走向'基础创新'——华为昇腾芯片、寒武纪AI加速卡已在部分场景实现国产替代。",
+          "本质上，中国AI不是在复制硅谷模式，而是在探索一条'应用反哺技术、市场驱动创新'的新路径。"
+        ],
+        "visual_description": "一张生态全景图，从底层的芯片/算力层，到中间的大模型/算法层，再到顶层的应用场景层，用箭头连接显示闭环。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "inspired",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "dense",
+        "media_weight": "image_heavy",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "surprised",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "强调'闭环'和'新路径'这两个关键词。用'本质上'引出核心洞见时，放慢语速，让听众有消化时间。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "content",
+      "narrative_role": "conflict",
+      "semantic_tags": [
+        "challenge",
+        "future_tech"
+      ],
+      "title": "挑战：芯片封锁与人才缺口",
+      "subtitle": "外部压力与内部短板并存",
+      "content": {
+        "lead": "芯片制裁和高端人才短缺是中国AI面临的核心挑战，但危机中也孕育着自主创新的机遇",
+        "points": [
+          "最直接的威胁：美国对华AI芯片出口管制持续升级，高端GPU（如H100、B200）被全面禁运，中国AI算力面临'卡脖子'危机。",
+          "更深层的危机：中国AI芯片自给率不足20%，在7nm以下制程上仍依赖台积电——如果封锁进一步扩大，算力成本可能飙升3-5倍。",
+          "人才缺口同样触目惊心：中国AI顶尖人才（全球前10%学者）数量仅为美国的1/6，且每年有超过2000名AI博士选择留美。",
+          "更严重的是，基础软件生态的缺失——PyTorch、TensorFlow等主流框架均由美国主导，国产框架（如PaddlePaddle）生态规模不到其1/10。",
+          "如果不解决这些问题，中国AI可能在3-5年内从'领先'退化为'跟随'——这不是危言耸听，而是正在发生的现实。"
+        ],
+        "visual_description": "一张暗色调的'断链'示意图：一条完整的AI产业链，在芯片制造和基础软件两个环节出现红色断裂标记。"
+      },
+      "relation_to_prev": "contrast",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "slow",
+        "emotional_state": "concerned",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "warning",
+        "density": "medium",
+        "media_weight": "text_heavy",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "concerned",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气要严肃但不绝望。每说一个挑战，停顿一下，让听众感受到紧迫感。最后一句'不是危言耸听'要加重语气。"
+      }
+    },
+    {
+      "id": "slide_05",
+      "index": 5,
+      "structural_role": "content",
+      "narrative_role": "vision",
+      "semantic_tags": [
+        "future",
+        "future_tech"
+      ],
+      "title": "未来机遇：中国AI的下一个十年",
+      "subtitle": "自主芯片、开源生态、AI for Science",
+      "content": {
+        "lead": "通过自主创新和开放合作，中国AI有望在芯片、科学计算和通用人工智能领域实现突破",
+        "points": [
+          "自主芯片的曙光：华为昇腾910B性能已达到A100的80%，预计2025年推出的昇腾920将逼近H100水平——国产替代正在加速。",
+          "科学计算的新战场：中国在AI for Science领域已走在世界前列——中科院用AI预测蛋白质结构，效率提升100倍；气象大模型'风乌'预报精度超越欧洲中心。",
+          "通用人工智能（AGI）的探索：中国多家机构正在研发多模态大模型，目标是实现'感知-推理-决策'一体化，这将是下一代AI的核心突破。",
+          "开放合作的新路径：中国已与东盟、中东、非洲等地区建立AI合作框架，通过'技术输出+本地化'模式，正在构建非西方中心的AI生态。",
+          "未来十年，中国AI有望在三个领域实现全球引领：AI+制造（智能工厂）、AI+能源（智能电网）、AI+生物（AI制药）。"
+        ],
+        "visual_description": "一幅未来感的蓝图：左侧是芯片、科学计算、AGI三个突破点，右侧是制造、能源、生物三个应用场景，中间用光带连接。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "hopeful",
+        "pause_after": false,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "image_heavy",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "inspired",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "从挑战页的沉重感中切换过来，语气要充满希望和信心。用'曙光'、'新战场'、'新路径'这些词营造向上的氛围。"
+      }
+    },
+    {
+      "id": "slide_06",
+      "index": 6,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing",
+        "future_tech"
+      ],
+      "title": "你的时代：加入中国AI浪潮",
+      "subtitle": "学习、创新、参与——未来由你定义",
+      "content": {
+        "lead": "中国AI的崛起需要每一位年轻人的参与，现在就是最好的入场时机",
+        "points": [
+          "中国AI的崛起不是少数人的游戏，它需要算法工程师、产品经理、行业专家、政策研究者——在座的每一位都能找到自己的位置。",
+          "现在就是最好的入场时机：AI产业人才缺口超过500万，平均薪资是传统IT行业的1.5倍，而中国AI企业正在疯狂招聘应届生。",
+          "不要等待，不要观望——加入这场浪潮，你不仅是见证者，更是定义者。"
+        ],
+        "visual_description": "一张充满活力的照片或插画：一群年轻人在AI实验室、创业公司或行业论坛中协作的场景，背景是'Join the Wave'的标语。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "motivated",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-20T09:55:46Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "determined",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "直接面向听众，用'你'和'在座的每一位'建立连接。最后一句'不要等待'要充满力量，作为全场的收尾。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-20T09:55:46Z",
+        "summary": "Planned 7 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 0,
+          "suggestions": 0
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-21T08:28:30Z",
+        "summary": "Filled content for 7 slides, emotional range: ['concerned', 'convinced', 'curious', 'determined', 'engaged', 'inspired', 'surprised']"
+      }
+    ]
+  }
+}

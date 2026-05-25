@@ -1,0 +1,55 @@
+{
+  "run_02": {
+    "label": "run_02",
+    "attempts": [
+      {
+        "attempt": 0,
+        "has_feedback": false,
+        "feedback_rules": [],
+        "state_snapshot": {
+          "total_warnings": 4,
+          "semantic_warnings": 0,
+          "critical_warnings": 0,
+          "warning_rules": [],
+          "critical_rules": [],
+          "warning_details": []
+        },
+        "errors": 0
+      }
+    ]
+  },
+  "run_05": {
+    "label": "run_05",
+    "attempts": [
+      {
+        "attempt": 0,
+        "has_feedback": false,
+        "feedback_rules": [],
+        "state_snapshot": {
+          "total_warnings": 9,
+          "semantic_warnings": 3,
+          "critical_warnings": 0,
+          "warning_rules": [
+            "E01"
+          ],
+          "critical_rules": [],
+          "warning_details": [
+            {
+              "rule": "E01",
+              "message": "emotional_role='curious' conflicts with content tone: no curious keywords found in content"
+            },
+            {
+              "rule": "E01",
+              "message": "emotional_role='surprised' conflicts with content tone: no surprised keywords found in content"
+            },
+            {
+              "rule": "E01",
+              "message": "emotional_role='determined' conflicts with content tone: no determined keywords found in content"
+            }
+          ]
+        },
+        "errors": 0
+      }
+    ]
+  }
+}

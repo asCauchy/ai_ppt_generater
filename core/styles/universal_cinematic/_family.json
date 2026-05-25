@@ -1,0 +1,49 @@
+{
+  "family_name": "universal_cinematic",
+  "version": "1.0",
+  "philosophy": "Clean, confident, adaptable. A universal modern aesthetic that works across contexts — from tech keynotes to academic lectures to business reports. Precision without coldness, clarity without sterility. The design language of effective communication, regardless of culture or industry.",
+
+  "core_principles": [
+    "Clarity is universal — every audience understands clean hierarchy",
+    "Restraint signals confidence — less is more across all contexts",
+    "Typography does the heavy lifting — clear type hierarchy transcends boundaries",
+    "Space creates importance — what you leave out matters more than what you put in",
+    "Motion serves comprehension — every animation must earn its place",
+    "Color is purposeful — accent colors have jobs, not just presence",
+    "Adapt to content, not to fashion — the aesthetic serves the message"
+  ],
+
+  "aesthetic_vocabulary": {
+    "surfaces": ["flat", "subtle_gradient", "glass", "matte", "textured"],
+    "motion": ["ease_out", "spring", "gentle", "linear", "snappy"],
+    "typography": ["sans_geometric", "sans_humanist", "serif_editorial", "mono"],
+    "depth": ["shadow", "blur", "ambient_glow", "none", "layered"],
+    "spacing": ["generous", "luxurious", "moderate", "functional"],
+    "color_mood": ["neutral", "cool", "warm", "desaturated", "muted"],
+    "transitions": ["dissolve", "hard_cut", "morph", "push", "fade_to_color"]
+  },
+
+  "forbidden_patterns": [
+    "Decorative particles, lens flares, excessive glow trails",
+    "Bounce/elastic easing without semantic purpose",
+    "Rapid cuts driven by beat detection rather than narrative",
+    "Texture overlays that add visual noise without meaning",
+    "Gold/chrome metallic treatments (unless culturally contextual)",
+    "Overloaded frames — more than 3 focal elements competing simultaneously"
+  ],
+
+  "parent_traditions": [
+    "Swiss/International Typographic Style",
+    "Apple Human Interface design philosophy",
+    "Dieter Rams' 10 principles of good design",
+    "Modernist architectural spatial theory",
+    "Editorial/magazine layout traditions",
+    "Contemporary brand identity systems"
+  ],
+
+  "emotional_range": {
+    "primary": ["confident", "precise", "calm", "focused", "warm"],
+    "secondary": ["inspired", "engaged", "curious", "reflective", "determined"],
+    "avoid": ["urgent", "shocked", "aggressive", "whimsical"]
+  }
+}

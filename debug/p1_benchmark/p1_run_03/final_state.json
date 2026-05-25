@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "title": "中国 AI 产业发展",
+    "style": "未来科技风",
+    "uuid": "9bae5e535e50",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "科技行业从业者与投资人",
+      "knowledge_level": "expert"
+    },
+    "occasion": {
+      "type": "conference_keynote",
+      "formality": "semi_formal"
+    },
+    "intent": {
+      "primary_goal": "inspire",
+      "desired_outcome": "激发听众对中国AI产业的信心与参与热情"
+    },
+    "duration": {
+      "total_minutes": 8
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "浪潮之巅：中国AI的全球坐标",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          1
+        ],
+        "goal": "建立宏大语境，引发听众对中国AI产业现状的好奇与关注"
+      },
+      {
+        "id": "sec_02",
+        "label": "破局之道：从追赶到引领",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          2,
+          2
+        ],
+        "goal": "展示关键数据与案例，证明中国AI已具备引领潜力"
+      },
+      {
+        "id": "sec_03",
+        "label": "未来之翼：下一个爆发点",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          3,
+          3
+        ],
+        "goal": "揭示未来趋势与投资机会，形成叙事高点"
+      },
+      {
+        "id": "sec_04",
+        "label": "共赴星辰：行动与愿景",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          4,
+          4
+        ],
+        "goal": "总结核心观点，激发听众参与热情与信心"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 5,
+      "pace": "fast",
+      "emotional_state": "excited"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 3,
+      "pace": "slow",
+      "emotional_state": "inspired"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening",
+        "vision"
+      ],
+      "title": "中国AI产业：从追赶到引领的下一站",
+      "subtitle": "2025年趋势洞察与投资机遇",
+      "content": {
+        "lead": "中国AI正站在从技术追赶到全球引领的临界点，未来三年将重塑全球科技格局。",
+        "points": [
+          "过去十年，我们是全球AI的忠实追随者；未来三年，我们将成为游戏规则的改写者。",
+          "从算力封锁到算法突围，中国AI产业正站在一个历史性的拐点上。",
+          "今天，我们不看过去，只看未来——中国AI的下一站，是引领。"
+        ],
+        "visual_description": "一张动态地图，中国版图从暗色逐渐亮起，向外辐射出光脉，连接全球主要科技节点。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:20:33Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "curious",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "开场用'改写规则'制造悬念，配合地图亮起的视觉效果，让听众立刻进入'转折点'的语境。"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "overview",
+        "roadmap"
+      ],
+      "title": "今日议程",
+      "subtitle": null,
+      "content": {
+        "lead": "我们将从全球坐标、破局案例、未来趋势到行动愿景，层层深入。",
+        "points": [
+          "第一站：全球坐标——中国AI在世界版图中的真实位置。",
+          "第二站：破局案例——三个维度，三个里程碑，证明我们不只是追赶。",
+          "第三站：未来之翼——AI Agent与具身智能，下一个万亿级风口。"
+        ],
+        "visual_description": "一张简洁的路线图或时间轴，标注四个站点的名称和图标，视觉上引导观众进入旅程。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "fast",
+        "emotional_state": "focused",
+        "pause_after": false,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:20:33Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用'旅程'的比喻串联议程，保持节奏轻快，让听众对后续内容产生期待。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "achievement",
+        "case_study"
+      ],
+      "title": "破局之道：三大关键突破",
+      "subtitle": "从大模型到芯片，中国AI的硬核实力",
+      "content": {
+        "lead": "2024年，中国AI在算力、算法、应用三个维度实现里程碑式突破，为引领奠定基础。",
+        "points": [
+          "算力：国产AI芯片出货量同比增长超过200%，华为昇腾910B性能已接近A100的80%。",
+          "算法：DeepSeek-V3等开源模型在多项基准测试中超越GPT-4，训练成本仅为后者的1/10。",
+          "应用：字节跳动、百度等企业已将AI嵌入核心业务，AI带来的营收贡献同比增长超过150%。",
+          "专利：2024年中国AI专利申请量占全球46%，连续四年位居第一。",
+          "人才：全球顶尖AI人才中，中国籍占比从2019年的11%跃升至2024年的28%。",
+          "生态：从芯片到框架到应用，中国已形成全球最完整的AI产业链之一。"
+        ],
+        "visual_description": "一组柱状图或雷达图，展示中国AI在算力、算法、应用、专利、人才等维度的增长曲线，数据清晰对比。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_with_visual",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:20:33Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "用数据说话，每一条都掷地有声。讲完'产业链'后停顿一秒，让听众消化这个事实。"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "insight",
+      "semantic_tags": [
+        "future",
+        "trend",
+        "opportunity"
+      ],
+      "title": "未来之翼：下一个爆发点",
+      "subtitle": "AI Agent、具身智能与行业大模型",
+      "content": {
+        "lead": "未来三年，AI Agent和具身智能将催生万亿级市场，中国有望成为核心策源地。",
+        "points": [
+          "AI Agent将取代SaaS成为下一代企业服务入口，中国拥有全球最大的制造业和消费市场，是Agent落地的天然试验场。",
+          "具身智能（Embodied AI）将在2027年前催生超过5000亿人民币的市场，中国在供应链和场景数据上具备先发优势。",
+          "真正的引领，不是复制硅谷，而是定义下一个范式——从'人机协作'到'人机共生'。"
+        ],
+        "visual_description": "一幅未来感的城市图景：人形机器人在工厂、医院、家庭中与人类协作，AI Agent以光点形式在数字空间中流动。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "fast",
+        "emotional_state": "excited",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "fullscreen",
+        "color_role": "accent",
+        "density": "sparse",
+        "media_weight": "text_with_visual",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:20:33Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "excited",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气从'证据'的冷静转为'洞见'的兴奋，用'不是复制，而是定义'来重新框定认知，激发想象力。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing",
+        "vision",
+        "action"
+      ],
+      "title": "共赴星辰：此刻即未来",
+      "subtitle": "加入中国AI的黄金时代",
+      "content": {
+        "lead": "中国AI的下一站不是追赶，而是引领。让我们共同参与这场全球最激动人心的科技变革。",
+        "points": [
+          "加入这场变革：无论你是开发者、投资人还是创业者，现在就是最好的入场时机。",
+          "不要等待未来——去创造它。中国AI的下一站，由在座的每一位共同书写。",
+          "让我们从今天开始，从此刻开始，共赴星辰。"
+        ],
+        "visual_description": "一张充满希望的全景图：星空下，一群人面向远方升起的朝阳，背景是AI芯片和代码流交织成的光路。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "slow",
+        "emotional_state": "inspired",
+        "pause_after": false,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:20:33Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "inspired",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气从'洞见'的兴奋转为'号召'的坚定。最后一句'共赴星辰'要说得缓慢而有力，配合视觉，留下余韵。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-21T08:20:33Z",
+        "summary": "Planned 5 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 0,
+          "suggestions": 4
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-21T08:20:51Z",
+        "summary": "Filled content for 5 slides, emotional range: ['convinced', 'curious', 'engaged', 'excited', 'inspired']",
+        "validation": {
+          "errors": 0,
+          "warnings": 2,
+          "suggestions": 0
+        }
+      }
+    ]
+  }
+}

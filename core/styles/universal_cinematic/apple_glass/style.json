@@ -1,0 +1,240 @@
+{
+  "name": "apple_glass",
+  "version": "1.0",
+  "description": "Apple-inspired style with confident emotional register. sans geometric typography, subtle gradient surfaces, luxurious spacing.",
+  "color_system": {
+    "primary": "#1D1D1F",
+    "primary_light": "#6c6c6d",
+    "primary_dark": "#0b0b0c",
+    "accent": "#0071E3",
+    "accent_light": "#59a2ec",
+    "accent_dark": "#002d5a",
+    "surface_bg": "#FFFFFF",
+    "surface_neutral": "#F5F5F7",
+    "surface_dark": "#e5e5e5",
+    "surface_mid": "#b2b2b2",
+    "surface_glass": "rgba(255,255,255,0.08)",
+    "surface_raised": "#FFFFFF",
+    "surface_sunken": "#F5F5F7",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#666666",
+    "text_tertiary": "#999999",
+    "text_on_dark": "#ffffff",
+    "text_on_dark_secondary": "rgba(255,255,255, 0.7)",
+    "text_on_brand": "#FFFFFF",
+    "text_on_brand_secondary": "rgba(255,255,255,0.8)",
+    "success": "#22C55E",
+    "warning": "#F59E0B",
+    "danger": "#EF4444",
+    "info": "#3B82F6",
+    "glow": "rgba(0,113,227, 0.15)",
+    "shadow": "rgba(0,0,0,0.06)",
+    "overlay_dark": "rgba(0,0,0,0.4)",
+    "overlay_light": "rgba(255,255,255,0.1)"
+  },
+  "typography_system": {
+    "title_font": "SF Pro Display",
+    "body_font": "SF Pro Text, system-ui, -apple-system, sans-serif",
+    "mono_font": "'SF Mono', 'Fira Code', monospace",
+    "scale_micro": 10,
+    "scale_caption": 12,
+    "scale_body_sm": 14,
+    "scale_body": 16,
+    "scale_body_lg": 18,
+    "scale_h3": 22,
+    "scale_h2": 24,
+    "scale_h1": 32,
+    "scale_hero": 44,
+    "scale_display": 56,
+    "scale_mega": 72
+  },
+  "composition_system": {
+    "negative_space": {
+      "hook": 0.55,
+      "context": 0.5,
+      "evidence": 0.45000000000000007,
+      "insight": 0.6000000000000001,
+      "conflict": 0.15,
+      "escalation": 0.13,
+      "release": 0.63,
+      "vision": 0.7000000000000001,
+      "recap": 0.55,
+      "call_to_action": 0.6,
+      "breathing_page": 0.75
+    },
+    "asymmetry": {
+      "hook": "symmetric",
+      "context": "balanced",
+      "evidence": "left_weighted",
+      "insight": "dynamic_shift",
+      "conflict": "unbalanced",
+      "escalation": "unbalanced",
+      "release": "balanced",
+      "vision": "symmetric",
+      "recap": "balanced",
+      "call_to_action": "symmetric",
+      "breathing_page": "symmetric"
+    },
+    "depth_layers": {
+      "default": [
+        "ambient_glow",
+        "foreground_text"
+      ],
+      "vision": [
+        "horizon_gradient",
+        "glow_sphere",
+        "foreground_text",
+        "accent_dust"
+      ],
+      "hook": [
+        "ambient_glow",
+        "glow_sphere",
+        "foreground_text",
+        "accent_line"
+      ]
+    }
+  },
+  "motion_language": {
+    "default_easing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "emphatic_easing": "cubic-bezier(0, 0.55, 0.45, 1)",
+    "gentle_easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "snappy_easing": "cubic-bezier(0, 0, 0.2, 1)",
+    "dramatic_easing": "cubic-bezier(0.2, 0, 1, 1)",
+    "intensity_speed": {
+      "1": {
+        "duration_mult": 2.0,
+        "stagger_mult": 2.5
+      },
+      "2": {
+        "duration_mult": 1.5,
+        "stagger_mult": 1.75
+      },
+      "3": {
+        "duration_mult": 0.8999999999999999,
+        "stagger_mult": 1.0499999999999998
+      },
+      "4": {
+        "duration_mult": 0.6400000000000001,
+        "stagger_mult": 0.8
+      },
+      "5": {
+        "duration_mult": 0.4,
+        "stagger_mult": 0.48
+      }
+    }
+  },
+  "transition_language": {
+    "default_transition": "slide_fade",
+    "default_duration_ms": 500,
+    "default_easing": "cubic-bezier(0.25, 0.1, 0.25, 1)",
+    "relation_transitions": {
+      "progression": {
+        "type": "slide_fade",
+        "duration_ms": 500,
+        "easing": "cubic-bezier(0.25, 0.1, 0.25, 1)"
+      },
+      "contrast": {
+        "type": "hard_cut",
+        "duration_ms": 150,
+        "easing": "step-end"
+      },
+      "escalation": {
+        "type": "intensify",
+        "duration_ms": 300,
+        "easing": "cubic-bezier(0.2, 0, 1, 1)"
+      },
+      "pivot": {
+        "type": "swing_pivot",
+        "duration_ms": 700,
+        "easing": "cubic-bezier(0.5, 0, 0.3, 1)"
+      },
+      "emotional_shift": {
+        "type": "color_shift",
+        "duration_ms": 600,
+        "easing": "cubic-bezier(0.35, 0, 0.1, 1)"
+      }
+    }
+  },
+  "surface_system": {
+    "surfaces": {
+      "evidence": {
+        "ambient": "none"
+      },
+      "recap": {
+        "ambient": "none"
+      }
+    },
+    "background_css": {
+      "brand_gradient": "linear-gradient(180deg, var(--c-primary) 0%, var(--c-surface-mid) 100%)",
+      "brand_solid": "#1D1D1F",
+      "dark_gradient": "linear-gradient(170deg, #e5e5e5 0%, #b2b2b2 40%, #0b0b0c 100%)",
+      "tension_gradient": "linear-gradient(160deg, #e5e5e5 0%, #b2b2b2 50%, #0b0b0c 100%)",
+      "horizon_gradient": "linear-gradient(180deg, var(--c-surface-bg) 0%, color-mix(in srgb, var(--c-accent) 8%, var(--c-surface-bg)) 50%, var(--c-surface-bg) 100%)",
+      "soft_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F5F5F7 100%)",
+      "accent_wash": "linear-gradient(135deg, #FFFFFF 0%, color-mix(in srgb, #0071E3 12%, #FFFFFF) 100%)",
+      "surface_bg": "#FFFFFF",
+      "surface_neutral": "#F5F5F7",
+      "subtle_gradient": "color-mix(in srgb, #F5F5F7 50%, #FFFFFF)"
+    }
+  },
+  "spacing_system": {
+    "unit_px": 12,
+    "slide_padding_v": "8vh",
+    "slide_padding_h": "6vw",
+    "content_gap": "0.5em",
+    "title_margin_bottom": "0.3em",
+    "subtitle_margin_bottom": "1em"
+  },
+  "density_system": {
+    "levels": {
+      "1": {
+        "max_points": 2,
+        "max_chars_per_point": 35,
+        "max_total_chars": 45
+      },
+      "2": {
+        "max_points": 3,
+        "max_chars_per_point": 60,
+        "max_total_chars": 120
+      },
+      "3": {
+        "max_points": 3,
+        "max_chars_per_point": 65,
+        "max_total_chars": 150
+      },
+      "4": {
+        "max_points": 5,
+        "max_chars_per_point": 90,
+        "max_total_chars": 300
+      },
+      "5": {
+        "max_points": 7,
+        "max_chars_per_point": 100,
+        "max_total_chars": 400
+      }
+    }
+  },
+  "emphasis_system": {},
+  "cinematic_rhythm": {},
+  "emotional_mapping": {},
+  "metadata": {
+    "author": "Style Intelligence Pipeline",
+    "source": "Apple WWDC 2024 Keynote Opening",
+    "confidence": 0.95,
+    "tags": [
+      "apple",
+      "confident",
+      "sans geometric",
+      "subtle gradient",
+      "spacious"
+    ],
+    "best_for": [
+      "executive_presentations",
+      "product_keynotes",
+      "design_reviews",
+      "brand_films"
+    ],
+    "avoid_for": []
+  },
+  "inherits": null
+}

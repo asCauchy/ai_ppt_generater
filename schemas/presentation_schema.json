@@ -1,0 +1,347 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Presentation OS — Unified State Model",
+  "description": "演示表达系统的统一语义内核。不是幻灯片列表，是演示体验的完整状态表示。服务于 Narrative Engine / Rhythm Engine / Design System / Renderer Runtime 的共同数据契约。",
+  "type": "object",
+  "required": ["meta", "context", "narrative_arc", "slides", "design_system"],
+  "properties": {
+
+    "meta": {
+      "type": "object",
+      "description": "演示标识元数据",
+      "required": ["title", "uuid", "version"],
+      "properties": {
+        "title": {"type": "string", "description": "演示主标题"},
+        "subtitle": {"type": "string"},
+        "presenter": {"type": "string", "description": "汇报人/演讲者"},
+        "date": {"type": "string", "format": "date"},
+        "uuid": {"type": "string", "description": "演示唯一标识，用于多 agent 协作追踪"},
+        "version": {"type": "string", "description": "语义版本号，每次 agent 写入后递增"},
+        "language": {"type": "string", "enum": ["zh-CN", "en", "zh-EN-mixed"]}
+      }
+    },
+
+    "context": {
+      "type": "object",
+      "description": "演示的外部约束与意图。驱动叙事策略和设计决策。",
+      "required": ["audience", "occasion", "intent", "duration"],
+      "properties": {
+        "audience": {
+          "type": "object",
+          "required": ["profile", "knowledge_level"],
+          "properties": {
+            "profile": {"type": "string", "description": "听众画像，如：计算机专业大三学生 / 省级科技厅领导"},
+            "size": {"type": "integer", "minimum": 1, "description": "预计听众人数"},
+            "knowledge_level": {
+              "type": "string",
+              "enum": ["beginner", "intermediate", "expert", "mixed"],
+              "description": "听众对该主题的平均认知水平"
+            },
+            "role": {"type": "string", "description": "听众角色，如：评审专家 / 投资人 / 学生 / 上级领导"}
+          }
+        },
+        "occasion": {
+          "type": "object",
+          "required": ["type", "formality"],
+          "properties": {
+            "type": {"type": "string", "enum": [
+              "academic_defense", "classroom_lecture", "academic_conference",
+              "government_report", "business_pitch", "corporate_meeting",
+              "product_launch", "tech_conference", "party_building",
+              "graduation_thesis", "competition", "workshop"
+            ]},
+            "formality": {"type": "string", "enum": ["formal", "semi_formal", "conversational"]}
+          }
+        },
+        "intent": {
+          "type": "object",
+          "required": ["primary_goal"],
+          "properties": {
+            "primary_goal": {"type": "string", "enum": [
+              "inform", "persuade", "inspire", "instruct", "report", "pitch", "defend"
+            ]},
+            "secondary_goals": {"type": "array", "items": {"type": "string"}},
+            "desired_outcome": {"type": "string", "description": "你希望听众结束后做什么/想什么/感受到什么"}
+          }
+        },
+        "duration": {
+          "type": "object",
+          "required": ["total_minutes"],
+          "properties": {
+            "total_minutes": {"type": "integer", "minimum": 1, "maximum": 480},
+            "qa_minutes": {"type": "integer", "minimum": 0}
+          }
+        }
+      }
+    },
+
+    "narrative_arc": {
+      "type": "object",
+      "description": "叙事弧线 —— 演示的骨架。定义章节结构、叙事策略和情绪走向。",
+      "required": ["structure", "sections"],
+      "properties": {
+        "structure": {
+          "type": "string",
+          "enum": [
+            "起承转合", "总-分-总", "问题-分析-方案", "时间线",
+            "SCQA", "金字塔", "英雄之旅", "对比递进", "custom"
+          ],
+          "description": "叙事结构模式。中国语境优先。"
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "arc_role", "function", "slide_range"],
+            "properties": {
+              "id": {"type": "string", "pattern": "^sec_\\d{2}$"},
+              "label": {"type": "string", "description": "章节标题"},
+              "arc_role": {"type": "string", "enum": [
+                "起", "承", "转", "合",
+                "序", "破", "急", "緩",
+                "hook", "context", "development", "climax", "resolution"
+              ]},
+              "function": {"type": "string", "enum": [
+                "context_building", "problem_statement", "analysis", "evidence_presentation",
+                "solution_proposal", "case_demonstration", "comparison", "vision_cast",
+                "recap", "call_to_action", "acknowledgment"
+              ]},
+              "slide_range": {
+                "type": "array", "minItems": 2, "maxItems": 2,
+                "items": {"type": "integer", "minimum": 0},
+                "description": "[起始索引, 结束索引]，含两端。索引对应 slides[].index"
+              },
+              "goal": {"type": "string", "description": "本段落在演示中的目标"}
+            }
+          }
+        }
+      }
+    },
+
+    "rhythm_map": {
+      "type": "array",
+      "description": "节奏地图 —— 全局情绪与密度曲线。与 slides[] 一一对应，由 Rhythm Engine 生成。",
+      "items": {
+        "type": "object",
+        "required": ["slide_index", "intensity", "emotional_state"],
+        "properties": {
+          "slide_index": {"type": "integer", "minimum": 0},
+          "intensity": {"type": "integer", "minimum": 1, "maximum": 5, "description": "综合信息密度 + 情绪强度"},
+          "pace": {"type": "string", "enum": ["slow", "moderate", "fast", "pause", "variable"]},
+          "emotional_state": {"type": "string", "enum": [
+            "curious", "concerned", "surprised", "convinced",
+            "excited", "reflective", "determined", "relieved",
+            "skeptical", "inspired", "solemn", "engaged"
+          ]},
+          "pause_after": {"type": "boolean", "description": "本页后是否需要呼吸停顿"},
+          "estimated_seconds": {"type": "integer", "minimum": 10, "maximum": 600},
+          "transition": {"type": "string", "enum": [
+            "hard_cut", "fade", "morph", "push", "reveal", "none"
+          ]}
+        }
+      }
+    },
+
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "description": "逐页内容。每页不仅包含内容，还包含其在整个演示中的语义位置。",
+      "items": {
+        "type": "object",
+        "required": ["id", "index", "structural_role", "narrative_role", "title", "content"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^slide_\\d{2}$", "description": "稳定引用标识"},
+          "index": {"type": "integer", "minimum": 0, "description": "在数组中的位置"},
+          "structural_role": {"type": "string", "enum": [
+            "cover", "toc", "section_header", "content", "summary", "thanks", "appendix"
+          ]},
+          "narrative_role": {"type": "string", "enum": [
+            "hook", "context", "conflict", "evidence", "insight",
+            "transition", "release", "vision", "call_to_action",
+            "breathing_page", "recap", "echo"
+          ]},
+          "presentation_role": {"type": "string", "enum": [
+            "data_viz", "quote", "comparison", "timeline",
+            "process", "case_study", "demonstration", "interaction",
+            null
+          ]},
+          "emotional_role": {"type": "string", "enum": [
+            "shock", "empathy", "excitement", "reflection",
+            "humor", "solemnity", null
+          ]},
+          "semantic_tags": {"type": "array", "items": {"type": "string"}, "description": "自由标签，用于检索和分类"},
+          "relation_to_prev": {"type": "string", "enum": [
+            "progression", "deepening", "contrast", "example",
+            "escalation", "recap", "pivot", "echo", "emotional_shift",
+            "build", null
+          ]},
+          "relation_to_next": {"type": "string", "enum": [
+            "progression", "deepening", "contrast", "example",
+            "escalation", "recap", "pivot", "echo", "emotional_shift",
+            "build", null
+          ]},
+          "rhythm": {
+            "type": "object",
+            "required": ["intensity", "pace"],
+            "properties": {
+              "intensity": {"type": "integer", "minimum": 1, "maximum": 5},
+              "pace": {"type": "string", "enum": ["slow", "moderate", "fast", "pause"]},
+              "emotional_state": {"type": "string", "enum": [
+                "curious", "concerned", "surprised", "convinced",
+                "excited", "reflective", "determined", "relieved",
+                "skeptical", "inspired", "solemn", "engaged"
+              ]},
+              "pause_after": {"type": "boolean"},
+              "estimated_seconds": {"type": "integer", "minimum": 10, "maximum": 600},
+              "transition_in": {"type": "string", "enum": ["hard_cut", "fade", "morph", "push", "reveal", "none"]},
+              "transition_out": {"type": "string", "enum": ["hard_cut", "fade", "morph", "push", "reveal", "none"]},
+              "build_steps": {"type": "integer", "minimum": 0, "maximum": 10, "description": "页内逐条揭示的步数，0=一次性展示"}
+            }
+          },
+          "design": {
+            "type": "object",
+            "required": ["layout_mode", "color_role", "density"],
+            "properties": {
+              "layout_mode": {"type": "string", "enum": [
+                "title_content", "title_image", "full_image",
+                "two_column", "grid_2x2", "grid_3x3",
+                "quote_centered", "data_focus", "centered",
+                "split_left", "split_right", "top_focus",
+                "bento", "magazine"
+              ]},
+              "color_role": {"type": "string", "enum": [
+                "primary", "secondary", "accent", "neutral", "inverted", "brand"
+              ]},
+              "background": {"type": "string", "enum": [
+                "light", "dark", "brand", "image", "gradient"
+              ]},
+              "density": {"type": "string", "enum": [
+                "sparse", "comfortable", "dense"
+              ]},
+              "media_weight": {"type": "string", "enum": [
+                "text_only", "text_heavy", "balanced", "visual_heavy", "visual_only"
+              ]},
+              "emphasis_level": {"type": "string", "enum": [
+                "normal", "highlighted", "hero"
+              ]},
+              "typography_hint": {"type": "string", "enum": [
+                "default", "large_title", "compact", "quote_style", "data_label"
+              ]},
+              "spacing_hint": {"type": "string", "enum": [
+                "default", "airy", "tight", "section_gap"
+              ]}
+            }
+          },
+          "title": {"type": "string", "maxLength": 30},
+          "subtitle": {"type": "string"},
+          "content": {
+            "type": "object",
+            "required": ["lead"],
+            "properties": {
+              "lead": {"type": "string", "description": "页面核心陈述，一句话说清本页要表达什么"},
+              "points": {"type": "array", "items": {"type": "string"}, "minItems": 1, "maxItems": 8, "description": "要点列表"},
+              "data": {"type": "object", "description": "结构化数据"},
+              "quote": {
+                "type": "object",
+                "properties": {
+                  "text": {"type": "string"},
+                  "source": {"type": "string"}
+                }
+              },
+              "visual_description": {"type": "string", "description": "配图/视觉元素的语义描述（非样式）"},
+              "footnote": {"type": "string"}
+            }
+          },
+          "notes": {
+            "type": "object",
+            "properties": {
+              "speaker_notes": {"type": "string", "description": "演讲者备注"},
+              "animation_hints": {"type": "array", "items": {"type": "string"}},
+              "hidden": {"type": "boolean", "description": "是否为隐藏页（不在正式演示中展示）"}
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "description": "溯源信息，用于多 agent 协作追踪",
+            "properties": {
+              "generated_by": {"type": "string", "description": "agent 名称，如 narrative_planner_v1"},
+              "generated_at": {"type": "string", "format": "date-time"},
+              "revised_by": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        }
+      }
+    },
+
+    "design_system": {
+      "type": "object",
+      "description": "设计系统 —— 全局视觉约束。替代自由文本 visual_notes。",
+      "required": ["palette", "typography", "spacing_unit"],
+      "properties": {
+        "palette": {
+          "type": "object",
+          "required": ["name", "colors"],
+          "properties": {
+            "name": {"type": "string"},
+            "colors": {
+              "type": "object",
+              "required": ["primary", "background", "text"],
+              "properties": {
+                "primary": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "secondary": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "accent": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "neutral": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "background": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "text": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "text_light": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "success": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+                "warning": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+              }
+            }
+          }
+        },
+        "typography": {
+          "type": "object",
+          "required": ["title_font", "body_font", "scale"],
+          "properties": {
+            "title_font": {"type": "string", "description": "标题字体"},
+            "body_font": {"type": "string", "description": "正文字体"},
+            "mono_font": {"type": "string", "description": "代码/数据字体"},
+            "scale": {"type": "array", "items": {"type": "integer"}, "description": "字号阶梯(pt)"},
+            "base_size": {"type": "integer", "description": "基准字号"}
+          }
+        },
+        "spacing_unit": {"type": "integer", "description": "基础间距单位(px)"},
+        "corner_style": {"type": "string", "enum": ["sharp", "rounded", "pill"]},
+        "grid_columns": {"type": "integer", "minimum": 1, "maximum": 24},
+        "icon_style": {"type": "string", "enum": ["outline", "filled", "dual_tone", "custom"]}
+      }
+    },
+
+    "runtime": {
+      "type": "object",
+      "description": "运行时状态 —— 用于多 agent 编排和增量生成",
+      "properties": {
+        "generation_stage": {"type": "string", "enum": [
+          "narrative_planned", "content_written", "rhythm_adjusted",
+          "design_styled", "reviewed", "complete"
+        ]},
+        "pipeline_version": {"type": "string"},
+        "agents_involved": {"type": "array", "items": {"type": "string"}},
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "action": {"type": "string"},
+              "agent": {"type": "string"},
+              "timestamp": {"type": "string", "format": "date-time"},
+              "summary": {"type": "string"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

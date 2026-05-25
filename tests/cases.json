@@ -1,0 +1,37 @@
+[
+  {
+    "topic": "人工智能在医学教育中的应用",
+    "style": "学术风",
+    "pages": 10,
+    "format": "md",
+    "description": "学术报告风格，高校教学场景"
+  },
+  {
+    "topic": "企业数字化转型战略与实施路径",
+    "style": "商务风",
+    "pages": 12,
+    "format": "md",
+    "description": "商务汇报风格，管理层汇报"
+  },
+  {
+    "topic": "区块链技术原理与产业落地实践",
+    "style": "科技风",
+    "pages": 10,
+    "format": "html",
+    "description": "技术分享风格，开发者大会"
+  },
+  {
+    "topic": "学习贯彻党的二十大精神",
+    "style": "党政风",
+    "pages": 8,
+    "format": "md",
+    "description": "党政汇报风格，党建学习"
+  },
+  {
+    "topic": "毕业论文答辩：基于深度学习的医学图像分割研究",
+    "style": "学术风",
+    "pages": 20,
+    "format": "pptx",
+    "description": "毕业论文答辩，完整学术流程"
+  }
+]

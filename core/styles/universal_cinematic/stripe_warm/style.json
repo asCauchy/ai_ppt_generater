@@ -1,0 +1,235 @@
+{
+  "name": "stripe_warm",
+  "version": "1.0",
+  "description": "Stripe-inspired style with warm emotional register. sans geometric typography, gradient surfaces, moderate spacing.",
+  "color_system": {
+    "primary": "#635BFF",
+    "primary_light": "#9994ff",
+    "primary_dark": "#272466",
+    "accent": "#00D924",
+    "accent_light": "#59e670",
+    "accent_dark": "#00560e",
+    "surface_bg": "#FFFFFF",
+    "surface_neutral": "#F6F9FC",
+    "surface_dark": "#e5e5e5",
+    "surface_mid": "#b2b2b2",
+    "surface_glass": "rgba(255,255,255,0.08)",
+    "surface_raised": "#FFFFFF",
+    "surface_sunken": "#F6F9FC",
+    "text_primary": "#1A1A1A",
+    "text_secondary": "#666666",
+    "text_tertiary": "#999999",
+    "text_on_dark": "#ffffff",
+    "text_on_dark_secondary": "rgba(255,255,255, 0.7)",
+    "text_on_brand": "#FFFFFF",
+    "text_on_brand_secondary": "rgba(255,255,255,0.8)",
+    "success": "#22C55E",
+    "warning": "#F59E0B",
+    "danger": "#EF4444",
+    "info": "#3B82F6",
+    "glow": "rgba(0,217,36, 0.15)",
+    "shadow": "rgba(0,0,0,0.06)",
+    "overlay_dark": "rgba(0,0,0,0.4)",
+    "overlay_light": "rgba(255,255,255,0.1)"
+  },
+  "typography_system": {
+    "title_font": "Stripe Sans",
+    "body_font": "SF Pro Text, system-ui, -apple-system, sans-serif",
+    "mono_font": "'SF Mono', 'Fira Code', monospace",
+    "scale_micro": 10,
+    "scale_caption": 12,
+    "scale_body_sm": 14,
+    "scale_body": 16,
+    "scale_body_lg": 18,
+    "scale_h3": 22,
+    "scale_h2": 24,
+    "scale_h1": 32,
+    "scale_hero": 44,
+    "scale_display": 56,
+    "scale_mega": 72
+  },
+  "composition_system": {
+    "negative_space": {
+      "hook": 0.45,
+      "context": 0.25,
+      "evidence": 0.19999999999999998,
+      "insight": 0.35,
+      "conflict": 0.12,
+      "escalation": 0.09999999999999999,
+      "release": 0.38,
+      "vision": 0.44999999999999996,
+      "recap": 0.3,
+      "call_to_action": 0.5,
+      "breathing_page": 0.5
+    },
+    "asymmetry": {
+      "hook": "symmetric",
+      "context": "dynamic_shift",
+      "evidence": "left_weighted",
+      "insight": "dynamic_shift",
+      "conflict": "unbalanced",
+      "escalation": "unbalanced",
+      "release": "balanced",
+      "vision": "symmetric",
+      "recap": "balanced",
+      "call_to_action": "symmetric",
+      "breathing_page": "symmetric"
+    }
+  },
+  "motion_language": {
+    "default_easing": "cubic-bezier(0, 0.55, 0.45, 1)",
+    "emphatic_easing": "cubic-bezier(0, 0.55, 0.45, 1)",
+    "gentle_easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+    "snappy_easing": "cubic-bezier(0, 0, 0.2, 1)",
+    "dramatic_easing": "cubic-bezier(0.2, 0, 1, 1)",
+    "intensity_speed": {
+      "1": {
+        "duration_mult": 1.4400000000000002,
+        "stagger_mult": 1.8
+      },
+      "2": {
+        "duration_mult": 1.08,
+        "stagger_mult": 1.26
+      },
+      "3": {
+        "duration_mult": 0.6,
+        "stagger_mult": 0.7
+      },
+      "4": {
+        "duration_mult": 0.4,
+        "stagger_mult": 0.5
+      },
+      "5": {
+        "duration_mult": 0.25,
+        "stagger_mult": 0.3
+      }
+    }
+  },
+  "transition_language": {
+    "default_transition": "slide_fade",
+    "default_duration_ms": 400,
+    "default_easing": "cubic-bezier(0, 0.55, 0.45, 1)",
+    "relation_transitions": {
+      "progression": {
+        "type": "slide_fade",
+        "duration_ms": 400,
+        "easing": "cubic-bezier(0, 0.55, 0.45, 1)"
+      },
+      "contrast": {
+        "type": "hard_cut",
+        "duration_ms": 150,
+        "easing": "step-end"
+      },
+      "escalation": {
+        "type": "intensify",
+        "duration_ms": 240,
+        "easing": "cubic-bezier(0.2, 0, 1, 1)"
+      },
+      "pivot": {
+        "type": "swing_pivot",
+        "duration_ms": 560,
+        "easing": "cubic-bezier(0.5, 0, 0.3, 1)"
+      },
+      "emotional_shift": {
+        "type": "color_shift",
+        "duration_ms": 480,
+        "easing": "cubic-bezier(0.35, 0, 0.1, 1)"
+      }
+    }
+  },
+  "surface_system": {
+    "background_css": {
+      "brand_gradient": "linear-gradient(135deg, var(--c-primary) 0%, var(--c-primary-light) 100%)",
+      "brand_solid": "#635BFF",
+      "dark_gradient": "linear-gradient(170deg, var(--c-surface-dark) 0%, var(--c-surface-mid) 40%, var(--c-primary-dark) 100%)",
+      "tension_gradient": "linear-gradient(160deg, #e5e5e5 0%, #b2b2b2 50%, #272466 100%)",
+      "horizon_gradient": "linear-gradient(180deg, #FFFFFF 0%, color-mix(in srgb, #00D924 8%, #FFFFFF) 50%, color-mix(in srgb, #635BFF 5%, #FFFFFF) 100%)",
+      "soft_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F6F9FC 100%)",
+      "accent_wash": "linear-gradient(135deg, #FFFFFF 0%, color-mix(in srgb, #00D924 12%, #FFFFFF) 100%)",
+      "surface_bg": "#FFFFFF",
+      "surface_neutral": "#F6F9FC",
+      "subtle_gradient": "color-mix(in srgb, #F6F9FC 50%, #FFFFFF)"
+    }
+  },
+  "spacing_system": {
+    "unit_px": 8,
+    "slide_padding_v": "4vh",
+    "slide_padding_h": "3vw",
+    "content_gap": "0.5em",
+    "title_margin_bottom": "0.3em",
+    "subtitle_margin_bottom": "1em"
+  },
+  "density_system": {
+    "levels": {
+      "1": {
+        "max_points": 2,
+        "max_chars_per_point": 40,
+        "max_total_chars": 50
+      },
+      "2": {
+        "max_points": 3,
+        "max_chars_per_point": 60,
+        "max_total_chars": 120
+      },
+      "3": {
+        "max_points": 4,
+        "max_chars_per_point": 80,
+        "max_total_chars": 200
+      },
+      "4": {
+        "max_points": 5,
+        "max_chars_per_point": 90,
+        "max_total_chars": 300
+      },
+      "5": {
+        "max_points": 7,
+        "max_chars_per_point": 100,
+        "max_total_chars": 400
+      }
+    }
+  },
+  "emphasis_system": {},
+  "cinematic_rhythm": {
+    "tension_curve": [
+      {
+        "position_pct": 0,
+        "intensity": 3
+      },
+      {
+        "position_pct": 30,
+        "intensity": 4
+      },
+      {
+        "position_pct": 60,
+        "intensity": 5
+      },
+      {
+        "position_pct": 80,
+        "intensity": 5
+      },
+      {
+        "position_pct": 100,
+        "intensity": 4
+      }
+    ]
+  },
+  "emotional_mapping": {},
+  "metadata": {
+    "author": "Style Intelligence Pipeline",
+    "source": "Stripe Sessions 2024 Keynote",
+    "confidence": 0.95,
+    "tags": [
+      "stripe",
+      "warm",
+      "sans geometric",
+      "gradient"
+    ],
+    "best_for": [
+      "academic_seminars",
+      "team_briefings"
+    ],
+    "avoid_for": [
+      "high_energy_pitches"
+    ]
+  }
+}

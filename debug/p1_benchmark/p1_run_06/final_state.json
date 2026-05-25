@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "title": "中国 AI 产业发展",
+    "style": "未来科技风",
+    "uuid": "10d885e210a9",
+    "version": "0.1.0",
+    "language": "zh-CN"
+  },
+  "context": {
+    "audience": {
+      "profile": "科技行业从业者与投资人",
+      "knowledge_level": "expert"
+    },
+    "occasion": {
+      "type": "conference_keynote",
+      "formality": "semi_formal"
+    },
+    "intent": {
+      "primary_goal": "inspire",
+      "desired_outcome": "激发听众对中国AI产业的信心与参与热情"
+    },
+    "duration": {
+      "total_minutes": 8
+    }
+  },
+  "narrative_arc": {
+    "structure": "起承转合",
+    "sections": [
+      {
+        "id": "sec_01",
+        "label": "起：中国AI的觉醒时刻",
+        "arc_role": "起",
+        "function": "context_building",
+        "slide_range": [
+          0,
+          1
+        ],
+        "goal": "建立宏大语境，引发听众对中国AI产业的好奇与关注"
+      },
+      {
+        "id": "sec_02",
+        "label": "承：从追赶到并跑",
+        "arc_role": "承",
+        "function": "evidence",
+        "slide_range": [
+          2,
+          2
+        ],
+        "goal": "展示中国AI产业的关键数据与突破，建立可信度"
+      },
+      {
+        "id": "sec_03",
+        "label": "转：下一个奇点",
+        "arc_role": "转",
+        "function": "insight",
+        "slide_range": [
+          3,
+          3
+        ],
+        "goal": "揭示未来趋势与颠覆性机会，激发想象与信心"
+      },
+      {
+        "id": "sec_04",
+        "label": "合：携手共创智能未来",
+        "arc_role": "合",
+        "function": "call_to_action",
+        "slide_range": [
+          4,
+          4
+        ],
+        "goal": "总结核心观点，号召行动，收束全篇"
+      }
+    ]
+  },
+  "rhythm_map": [
+    {
+      "slide_index": 0,
+      "intensity": 3,
+      "pace": "moderate",
+      "emotional_state": "curious"
+    },
+    {
+      "slide_index": 1,
+      "intensity": 2,
+      "pace": "fast",
+      "emotional_state": "focused"
+    },
+    {
+      "slide_index": 2,
+      "intensity": 4,
+      "pace": "moderate",
+      "emotional_state": "impressed"
+    },
+    {
+      "slide_index": 3,
+      "intensity": 5,
+      "pace": "fast",
+      "emotional_state": "inspired"
+    },
+    {
+      "slide_index": 4,
+      "intensity": 3,
+      "pace": "slow",
+      "emotional_state": "determined"
+    }
+  ],
+  "slides": [
+    {
+      "id": "slide_00",
+      "index": 0,
+      "structural_role": "cover",
+      "narrative_role": "hook",
+      "semantic_tags": [
+        "opening",
+        "vision"
+      ],
+      "title": "中国AI产业：从觉醒到引领",
+      "subtitle": "未来十年，谁将定义智能边界？",
+      "content": {
+        "lead": "中国AI正站在从技术追赶到全球引领的临界点，未来十年将重塑全球科技格局。",
+        "points": [
+          "十年前，中国AI还在追赶；十年后，全球AI论文引用量前1%的机构中，中国已占近三成。",
+          "从应用到基础模型，中国AI正从“跟随者”变为“定义者”——下一个十年，格局将彻底改写。"
+        ],
+        "visual_description": "一张从模糊到清晰的动态地图，中国区域逐渐亮起并向外辐射光波，象征从追赶到引领的临界点。"
+      },
+      "relation_to_prev": null,
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 3,
+        "pace": "moderate",
+        "emotional_state": "curious",
+        "pause_after": true,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:22:20Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "curious",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "用数据冲击开场，制造悬念。停顿后，用‘下一个十年’拉高期待。"
+      }
+    },
+    {
+      "id": "slide_01",
+      "index": 1,
+      "structural_role": "toc",
+      "narrative_role": "context",
+      "semantic_tags": [
+        "overview",
+        "roadmap"
+      ],
+      "title": "今日议程",
+      "subtitle": null,
+      "content": {
+        "lead": "我们将从三个维度透视中国AI产业：现状、突破与未来。",
+        "points": [
+          "第一，用数据看清中国AI的全球坐标——我们到底处在什么位置？",
+          "第二，揭示下一个奇点：AI与实体经济的融合将如何引爆万亿级市场。",
+          "第三，行动邀请：在座每一位如何参与这场变革。"
+        ],
+        "visual_description": "简洁的三步路线图图标，从左到右依次排列，每步配一个关键词：现状、突破、行动。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 2,
+        "pace": "fast",
+        "emotional_state": "focused",
+        "pause_after": false,
+        "estimated_seconds": 30
+      },
+      "design": {
+        "layout_mode": "grid",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "text_only",
+        "emphasis_level": "normal"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:22:20Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "engaged",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "快速带过，让听众对整场演讲的脉络有清晰预期。语气自信、从容。"
+      }
+    },
+    {
+      "id": "slide_02",
+      "index": 2,
+      "structural_role": "content",
+      "narrative_role": "evidence",
+      "semantic_tags": [
+        "data",
+        "breakthrough"
+      ],
+      "title": "数据说话：中国AI的加速度",
+      "subtitle": "从论文到专利，从应用到生态",
+      "content": {
+        "lead": "中国AI在论文产出、专利申请和产业落地三个维度已进入全球第一梯队。",
+        "points": [
+          "中国AI论文数量全球第一，2023年占全球总量的31%，超越美国。",
+          "在顶级会议NeurIPS、ICML上，中国作者论文占比从2018年的15%跃升至2023年的28%。",
+          "AI专利申请量占全球45%，是美国的2.5倍，且授权率持续上升。",
+          "产业落地加速：中国AI市场规模2023年突破5000亿元，年复合增长率超30%。",
+          "在计算机视觉、自然语言处理、语音识别三大领域，中国企业的产品渗透率已超60%。",
+          "全球AI独角兽中，中国占25%，估值总和超过2000亿美元。",
+          "但基础算力与高端芯片仍是短板——差距既是挑战，也是未来增长空间。"
+        ],
+        "visual_description": "一组动态柱状图或折线图，展示中国AI论文、专利、市场规模与美国的对比变化，最后一张图用红色标注算力短板。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 4,
+        "pace": "moderate",
+        "emotional_state": "impressed",
+        "pause_after": true,
+        "estimated_seconds": 120
+      },
+      "design": {
+        "layout_mode": "split",
+        "color_role": "accent",
+        "density": "medium",
+        "media_weight": "charts_and_text",
+        "emphasis_level": "high"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:22:20Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "convinced",
+      "presentation_role": "data_viz",
+      "notes": {
+        "speaker_notes": "数据要读得快、有节奏。每说完一个数据停顿一秒，让听众消化。最后一句转折要压低声音，制造张力。"
+      }
+    },
+    {
+      "id": "slide_03",
+      "index": 3,
+      "structural_role": "content",
+      "narrative_role": "insight",
+      "semantic_tags": [
+        "future",
+        "vision",
+        "opportunity"
+      ],
+      "title": "下一个奇点：AI与实体经济的深度融合",
+      "subtitle": "智能制造、自动驾驶、AI制药——万亿级赛道正在开启",
+      "content": {
+        "lead": "中国独特的产业场景与政策优势，将催生全球最大的AI应用市场。",
+        "points": [
+          "中国拥有全球最完整的制造业产业链、最大的消费市场和最丰富的应用场景——这是任何国家无法复制的AI试验场。",
+          "真正的奇点不是模型参数竞赛，而是AI像水电一样渗透进工厂、医院、农田和城市——中国正在定义这条路。"
+        ],
+        "visual_description": "一张中国地图上，工厂、医院、农田、城市等场景图标亮起，彼此之间用流动的光线连接，象征AI渗透进实体经济。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": "progression",
+      "rhythm": {
+        "intensity": 5,
+        "pace": "fast",
+        "emotional_state": "inspired",
+        "pause_after": true,
+        "estimated_seconds": 150
+      },
+      "design": {
+        "layout_mode": "fullscreen",
+        "color_role": "accent",
+        "density": "sparse",
+        "media_weight": "visual_dominant",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:22:20Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "excited",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语速加快，眼神与听众交流。用‘不是…而是…’句式制造顿悟感。最后一句要充满确信。"
+      }
+    },
+    {
+      "id": "slide_04",
+      "index": 4,
+      "structural_role": "thanks",
+      "narrative_role": "call_to_action",
+      "semantic_tags": [
+        "closing",
+        "summary",
+        "action"
+      ],
+      "title": "智能未来，由我们共同定义",
+      "subtitle": "加入这场变革，成为下一个十年的定义者",
+      "content": {
+        "lead": "中国AI的未来不是等待，而是行动——现在就是最好的入场时刻。",
+        "points": [
+          "未来十年，中国AI将创造超过1亿个新岗位，重塑每一个行业——但这一切不会自动发生。",
+          "现在就是最好的入场时刻：加入这场变革，成为定义者，而不是旁观者。"
+        ],
+        "visual_description": "一张充满未来感的城市天际线，人群剪影面向远方升起的太阳，象征共同参与和希望。"
+      },
+      "relation_to_prev": "progression",
+      "relation_to_next": null,
+      "rhythm": {
+        "intensity": 3,
+        "pace": "slow",
+        "emotional_state": "determined",
+        "pause_after": false,
+        "estimated_seconds": 45
+      },
+      "design": {
+        "layout_mode": "centered",
+        "color_role": "brand",
+        "density": "sparse",
+        "media_weight": "text_only",
+        "emphasis_level": "hero"
+      },
+      "provenance": {
+        "generated_by": "narrative_planner_v1",
+        "generated_at": "2026-05-21T08:22:20Z",
+        "revised_by": [
+          "content_writer_v1"
+        ]
+      },
+      "emotional_role": "determined",
+      "presentation_role": null,
+      "notes": {
+        "speaker_notes": "语气坚定、有号召力。最后一句‘不是旁观者’要加重语气，然后停顿，等待掌声。"
+      }
+    }
+  ],
+  "design_system": {
+    "palette": {
+      "name": "academic_blue",
+      "colors": {
+        "primary": "#003D6B",
+        "secondary": "#5B9BD5",
+        "accent": "#E8A838",
+        "neutral": "#F0F2F5",
+        "background": "#FFFFFF",
+        "text": "#333333",
+        "text_light": "#888888"
+      }
+    },
+    "typography": {
+      "title_font": "思源黑体",
+      "body_font": "微软雅黑",
+      "scale": [
+        12,
+        14,
+        16,
+        18,
+        24,
+        32,
+        44,
+        56
+      ],
+      "base_size": 16
+    },
+    "spacing_unit": 8,
+    "corner_style": "rounded",
+    "grid_columns": 12
+  },
+  "runtime": {
+    "generation_stage": "content_written",
+    "pipeline_version": "1.0",
+    "agents_involved": [
+      "narrative_planner_v1",
+      "content_writer_v1"
+    ],
+    "history": [
+      {
+        "action": "narrative_planned",
+        "agent": "narrative_planner_v1",
+        "timestamp": "2026-05-21T08:22:20Z",
+        "summary": "Planned 5 slides in 4 sections (起承转合)",
+        "validation": {
+          "errors": 0,
+          "warnings": 0,
+          "suggestions": 1
+        }
+      },
+      {
+        "action": "content_written",
+        "agent": "content_writer_v1",
+        "timestamp": "2026-05-21T08:22:38Z",
+        "summary": "Filled content for 5 slides, emotional range: ['convinced', 'curious', 'determined', 'engaged', 'excited']",
+        "validation": {
+          "errors": 0,
+          "warnings": 3,
+          "suggestions": 0
+        }
+      }
+    ]
+  }
+}
